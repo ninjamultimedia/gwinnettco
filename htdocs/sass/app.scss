@@ -4,6 +4,9 @@
 // Comment out this import if you don't want to use normalize
 @import "normalize";
 
+// Custom scss file
+@import "custom";
+
 // Comment out this import if you are customizing you imports below
 @import "foundation";
 
@@ -53,4 +56,3 @@
 // @import "foundation/components/thumbs";
 // @import "foundation/components/tooltips";
 // @import "foundation/components/dropdown";
-
