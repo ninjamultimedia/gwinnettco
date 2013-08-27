@@ -2,6 +2,12 @@
 * Global variables
 * Taken from PSDs provided by M8th
 */
+@import "compass/css3/images";
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+@import "compass/css3/text-shadow";
+@import "compass/typography/text/replacement";
+
 $dark-blue: rgb(35,59,105);
 $medium-blue: rgb(77,113,137);
 $bright-blue: rgb(54,96,168);
@@ -10,15 +16,16 @@ $greenblue: rgb(87,131,156);
 $dark-greygreen: rgb(62,62,53);
 $medium-grey: rgb(104,112,120);
 
-$nav-gradient: +linear-gradient(color-stops(rgb(2,34,87),rgb(63,97,155)));
-$header-gradient: +linear-gradient(color-stops(rgb(34,62,113),rgb(18,34,61)));
-$subtle-gradient:  +linear-gradient(color-stops(rgb(255,255,255),rgb(232,232,232)));
-$button-gradient-blue: +linear-gradient(color-stops(rgb(97,138,185),rgb(52,74,124)));
-$button-gradient-green: +linear-gradient(color-stops(rgb(127,174,14),rgb(80,126,8)));
-$button-gradient-greyblue: +linear-gradient(color-stops(rgb(129,17,191),rgb(75,103,122)));
-$button-gradient-greygreen: +linear-gradient(color-stops(rgb(107,107,92),rgb(78,77,65)));
+$nav-gradient: linear-gradient(color-stops(rgb(2,34,87),rgb(63,97,155)));
+$header-gradient: linear-gradient(color-stops(rgb(34,62,113),rgb(18,34,61)));
+$subtle-gradient:  linear-gradient(color-stops(rgb(255,255,255),rgb(232,232,232)));
+$button-gradient-blue: linear-gradient(color-stops(rgb(97,138,185),rgb(52,74,124)));
+$button-gradient-green: linear-gradient(color-stops(rgb(127,174,14),rgb(80,126,8)));
+$button-gradient-greyblue: linear-gradient(color-stops(rgb(129,170,191),rgb(75,103,122)));
+$button-gradient-greygreen: linear-gradient(color-stops(rgb(107,107,92),rgb(78,77,65)));
 
 /* Foundation Global Overrides */
+
 $primary-color: $medium-blue;
 $body-font-color: $dark-blue !default;
 $header-font-color: $dark-blue;
@@ -27,3 +34,58 @@ $anchor-font-color-hover: darken($bright-blue, 5%);
 
 $h3-font-size: emCalc(30);
 $h4-font-size: emCalc(28);
+
+body { font-size: emCalc(12px);}
+/** reset grid padding **/
+@media only screen {
+  .row .columns, .row .column {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/*
+* custom snippet modules styling
+*/
+
+/** Buttons **/
+$include-html-button-classes: false; //this frees up .button for our use
+.button {
+  @include border-radius(15px, 10px);
+  background: $button-gradient-blue;
+  border: 1px solid $dark-blue;
+  @include box-shadow(none);
+  @include text-shadow(lighten(black,30%) 1px 1px 4px);
+  white-space: nowrap;
+  &.greygreen {
+    background: $button-gradient-greygreen;
+    border: 1px solid $dark-blue;
+  }
+  &.greyblue {
+    background: $button-gradient-greyblue;
+    border: 1px solid rgb(49,65,78);
+  }
+  &.green {
+    background: $button-gradient-green;
+    border: 1px solid rgb(65,102,7);
+  }
+}
+
+/** Header & Navigation **/
+.header-wrapper {
+  header {
+    .session-nav {
+      height: 48px;
+      background: url('/images/header-bg.png') no-repeat 0 0;
+      background-size: cover;
+      .header-logo a {
+        display: inline-block;
+        @include replace-text('/images/header-logo.png');
+        background-size:cover;
+        width: 147px;
+        height: 40px;
+        margin: 4px 0;
+      }
+    }
+  }
+}
