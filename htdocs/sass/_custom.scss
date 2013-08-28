@@ -15,6 +15,7 @@ $light-blue: rgb(196,220,248);
 $greenblue: rgb(87,131,156);
 $dark-greygreen: rgb(62,62,53);
 $medium-grey: rgb(104,112,120);
+$off-white: rgb(239,255,255);
 
 $nav-gradient: linear-gradient(color-stops(rgb(2,34,87),rgb(63,97,155)));
 $header-gradient: linear-gradient(color-stops(rgb(34,62,113),rgb(18,34,61)));
@@ -35,7 +36,7 @@ $anchor-font-color-hover: darken($bright-blue, 5%);
 $h3-font-size: emCalc(30);
 $h4-font-size: emCalc(28);
 
-body { font-size: emCalc(12px);}
+body { font-size: emCalc(12px); line-height: 1.25em; }
 /** reset grid padding **/
 @media only screen {
   .row .columns, .row .column {
@@ -44,29 +45,31 @@ body { font-size: emCalc(12px);}
   }
 }
 
-/*
+/**
 * custom snippet modules styling
-*/
+*
+**/
 
 /** Buttons **/
 $include-html-button-classes: false; //this frees up .button for our use
 .button {
-  @include border-radius(15px, 10px);
-  background: $button-gradient-blue;
+  @include border-radius(10px, 10px);
+  @include background-image($button-gradient-blue);
   border: 1px solid $dark-blue;
   @include box-shadow(none);
   @include text-shadow(lighten(black,30%) 1px 1px 4px);
   white-space: nowrap;
   &.greygreen {
-    background: $button-gradient-greygreen;
+    @include background-image($button-gradient-greygreen);
     border: 1px solid $dark-blue;
   }
   &.greyblue {
-    background: $button-gradient-greyblue;
+    @include background-image($button-gradient-greyblue);
     border: 1px solid rgb(49,65,78);
+  @include text-shadow($dark-blue 1px 1px 2px);
   }
   &.green {
-    background: $button-gradient-green;
+    @include background-image($button-gradient-green);
     border: 1px solid rgb(65,102,7);
   }
 }
@@ -84,8 +87,104 @@ $include-html-button-classes: false; //this frees up .button for our use
         background-size:cover;
         width: 147px;
         height: 40px;
-        margin: 4px 0;
+        margin: 4px 10px;
+      }
+      .button {
+        font-weight: normal;
+        padding: 8px 10px;
+        margin: 5px;
+      }
+      .button-wrapper:last-child .button { margin-left: 15px; }
+    }
+    .main-nav {
+      @include background-image($nav-gradient);
+      .columns {
+        text-align: center;
+        a {
+          display: inline-block;
+          background: url('/images/main-nav_border-right.png') no-repeat top right;
+          padding: 12px 0;
+          color: white;
+          font-size: emCalc(17px);
+          width: 100%;
+        }
+        &:nth-child(3) a { padding: 5px 0; background: transparent; }
       }
     }
   }
+}
+
+/** near me icon **/
+.button.near-me {
+  padding-left: 24px !important;
+  .icon {
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    background: url('/images/radar.png') no-repeat 0 0;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+    margin-top: -2px;
+    left: 5px;
+  }
+}
+
+.button-list {
+  padding-top: 10px;
+  text-align: center;
+}
+
+/** Section Styling **/
+section {
+  .title-bar {
+    @include background-image($header-gradient);
+    padding: 6px 15px;
+    h2 {
+      display: inline-block;
+      font-size: 15px;
+      color: $off-white;
+    }
+    .view-all {
+      color: $light-blue;
+      margin-left: 12px;
+      text-decoration: underline;
+      &:hover { text-decoration: none; }
+    }
+  }
+  .wrapper {
+    color: $dark-blue;
+  }
+}
+
+/** vertical button lists **/
+ul.vertical-buttons {
+  li {
+    @include background-image($subtle-gradient);
+    border-bottom: 1px solid rgb(22,41,75);
+    a {
+      display: inline-block;
+      width: 100%;
+      background: url("/images/chevron-right.png") no-repeat 97% center;
+      padding: 17px 44px 17px 19px;
+      h3 {
+        margin-bottom: 0;
+      }
+      p {
+        margin-bottom: 0;
+        color: $dark-blue;
+        font-style: italic;
+        .location { font-weight: bold; }
+        .date { }
+      }
+    }
+  }
+}
+
+/** Contact Details **/
+
+.contact-details {
+  color: $dark-blue;
+  padding: 20px 15px;
+  border-bottom: 1px solid rgb(170,183,204);
 }
