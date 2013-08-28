@@ -76,41 +76,39 @@ $include-html-button-classes: false; //this frees up .button for our use
 }
 
 /** Header & Navigation **/
-.header-wrapper {
-  header {
-    .session-nav {
-      height: 48px;
-      background: url('/images/header-bg.png') no-repeat 0 0;
-      background-size: cover;
-      .header-logo a {
-        display: inline-block;
-        @include replace-text('/images/header-logo.png');
-        background-size:cover;
-        width: 147px;
-        height: 40px;
-        margin: 4px 10px;
-      }
-      .button {
-        font-weight: normal;
-        padding: 8px 10px;
-        margin: 5px;
-      }
-      .button-wrapper:last-child .button { margin-left: 15px; }
+header {
+  .session-nav {
+    height: 48px;
+    background: url('/images/header-bg.png') no-repeat 0 0;
+    background-size: cover;
+    .header-logo a {
+      display: inline-block;
+      @include replace-text('/images/header-logo.png');
+      background-size:cover;
+      width: 147px;
+      height: 40px;
+      margin: 4px 10px;
     }
-    .main-nav {
-      @include background-image($nav-gradient);
-      .columns {
-        text-align: center;
-        a {
-          display: inline-block;
-          background: url('/images/main-nav_border-right.png') no-repeat top right;
-          padding: 12px 0;
-          color: white;
-          font-size: emCalc(17px);
-          width: 100%;
-        }
-        &:nth-child(3) a { padding: 5px 0; background: transparent; }
+    .button {
+      font-weight: normal;
+      padding: 8px 10px;
+      margin: 5px;
+    }
+    .button-wrapper:last-child .button { margin-left: 15px; }
+  }
+  .main-nav {
+    @include background-image($nav-gradient);
+    .columns {
+      text-align: center;
+      a {
+        display: inline-block;
+        background: url('/images/main-nav_border-right.png') no-repeat top right;
+        padding: 12px 0;
+        color: white;
+        font-size: emCalc(17px);
+        width: 100%;
       }
+      &:nth-child(3) a { padding: 5px 0; background: transparent; }
     }
   }
 }
@@ -144,6 +142,7 @@ $include-html-button-classes: false; //this frees up .button for our use
     color: gray;
     padding: 4px;
     margin-bottom: 0;
+    height: 26px;
   }
   .quicksearch {
     background: url('/images/select_button.png') no-repeat center right;
@@ -151,32 +150,31 @@ $include-html-button-classes: false; //this frees up .button for our use
   }
 }
 
-/** button list styling **/
+/** Inline Horizontal Button List **/
 .button-list {
   padding-top: 10px;
   text-align: center;
 }
 
-/** Section Styling **/
-section {
-  .title-bar {
-    @include background-image($header-gradient);
-    padding: 6px 15px;
-    h2 {
-      display: inline-block;
-      font-size: 15px;
-      color: $off-white;
-    }
-    .view-all {
-      color: $light-blue;
-      margin-left: 12px;
-      text-decoration: underline;
-      &:hover { text-decoration: none; }
-    }
+/** Title Bar **/
+.title-bar {
+  @include background-image($header-gradient);
+  padding: 6px 15px;
+  h2 {
+    display: inline-block;
+    font-size: 15px;
+    color: $off-white;
   }
-  .wrapper {
-    color: $dark-blue;
+  .view-all {
+    color: $light-blue;
+    margin-left: 12px;
+    text-decoration: underline;
+    &:hover { text-decoration: none; }
   }
+}
+/** Generic wrapper styles (for copy generally) **/
+.wrapper {
+  color: $dark-blue;
 }
 
 /** vertical button lists **/
@@ -204,7 +202,6 @@ ul.vertical-buttons {
 }
 
 /** Contact Details **/
-
 .contact-details {
   color: $dark-blue;
   padding: 20px 15px;

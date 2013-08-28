@@ -16,39 +16,37 @@
     <script src='javascripts/vendor/custom.modernizr.js'></script>
   </head>
   <body>
-    <div class='header-wrapper'>
-      <header>
-        <div class='row session-nav'>
-          <div class='header-logo small-6 columns'>
-            <a href='#'>Home</a>
-          </div>
-          <div class='button-wrapper small-3 columns'>
-            <a class='button greyblue near-me' href='#'>
-              <span class='icon'></span>
-              Near Me
-            </a>
-          </div>
-          <div class='button-wrapper small-3 columns'>
-            <a class='button greyblue' href='#'>Log In</a>
-          </div>
+    <header>
+      <div class='row session-nav'>
+        <div class='header-logo small-6 columns'>
+          <a href='#'>Home</a>
         </div>
-        <div class='row main-nav'>
-          <div class='small-4 columns'>
-            <a href='#'>Home</a>
-          </div>
-          <div class='small-4 columns'>
-            <a href='#'>Departments</a>
-          </div>
-          <div class='small-4 columns'>
-            <a href='#'>Important<br />Numbers</a>
-          </div>
+        <div class='button-wrapper small-3 columns'>
+          <a class='button greyblue near-me' href='#'>
+            <span class='icon'></span>
+            Near Me
+          </a>
         </div>
-      </header>
-    </div>
+        <div class='button-wrapper small-3 columns'>
+          <a class='button greyblue' href='#'>Log In</a>
+        </div>
+      </div>
+      <div class='row main-nav'>
+        <div class='small-4 columns'>
+          <a href='#'>Home</a>
+        </div>
+        <div class='small-4 columns'>
+          <a href='#'>Departments</a>
+        </div>
+        <div class='small-4 columns'>
+          <a href='#'>Important<br />Numbers</a>
+        </div>
+      </div>
+    </header>
     <section>
       <form class='site-search row'>
         <div class='small-6 columns'>
-          <input class='search' name='search' type='text' value='Search'>
+          <input class='search' name='search' onblur="if(this.value == '') { this.value = 'Search'; }" onfocus="if(this.value == 'Search') { this.value = ''; }" type='text' value='Search'>
         </div>
         <div class='small-6 columns'>
           <select class='quicksearch'>
