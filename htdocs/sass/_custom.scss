@@ -7,6 +7,7 @@
 @import "compass/css3/box-shadow";
 @import "compass/css3/text-shadow";
 @import "compass/typography/text/replacement";
+@import "compass/css3/appearance";
 
 $dark-blue: rgb(35,59,105);
 $medium-blue: rgb(77,113,137);
@@ -130,6 +131,27 @@ $include-html-button-classes: false; //this frees up .button for our use
   }
 }
 
+/** Site Search Form **/
+.site-search {
+  .columns {
+    padding: 10px 5px;
+  }
+  .search, .quicksearch {
+    @include box-shadow(none);
+    @include appearance(none);
+    @include border-radius(0);
+    border: 1px solid gray;
+    color: gray;
+    padding: 4px;
+    margin-bottom: 0;
+  }
+  .quicksearch {
+    background: url('/images/select_button.png') no-repeat center right;
+    background-size: contain;
+  }
+}
+
+/** button list styling **/
 .button-list {
   padding-top: 10px;
   text-align: center;
