@@ -47,9 +47,15 @@ body { font-size: emCalc(12px); line-height: 1.25em; }
 }
 
 /**
-* custom snippet modules styling
+* custom snippet modules and custom class styling
 *
 **/
+/** Highlighted wrappers **/
+.highlighted-wrapper {
+  background: $medium-blue;
+  &.greygreen-gradient { @include background-image($button-gradient-greygreen); color: rgb(229,230,213); }
+  &.dark-greygreen { background: $dark-greygreen; color: rgb(195,196,182); }
+}
 
 /** Buttons **/
 $include-html-button-classes: false; //this frees up .button for our use
@@ -110,6 +116,45 @@ header {
       }
       &:nth-child(3) a { padding: 5px 0; background: transparent; }
     }
+  }
+}
+
+footer {
+  margin-top: 5px;
+  border-top: 1px solid rgb(170,183,204);
+  .newsletter-button {
+    a.button {
+      width: 95%;
+      padding: 10px 3px;
+      padding-right: 24px;
+      @include text-shadow(none);
+      font-weight: normal;
+      font-size: emCalc(14);
+      text-decoration: underline;
+      .icon.letter{
+        display: inline-block;
+        position: absolute;
+        width: 24px;
+        height: 15px;
+        right: 10px;
+        top: 9px;
+        background: url('/images/email-icon.png') no-repeat 0 0;
+        background-size: cover;
+      }
+    }
+  }
+  .full-site-link {
+    a {
+      display: inline-block;
+      width: 100%;
+      color: rgb(195,196,182);
+      padding: 10px;
+    }
+  }
+  .copyright {
+    font-size: emCalc(12px);
+    line-height: 1.2em;
+    padding: 15px;
   }
 }
 
