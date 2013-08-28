@@ -21,6 +21,7 @@ $off-white: rgb(239,255,255);
 $nav-gradient: linear-gradient(color-stops(rgb(2,34,87),rgb(63,97,155)));
 $header-gradient: linear-gradient(color-stops(rgb(34,62,113),rgb(18,34,61)));
 $subtle-gradient:  linear-gradient(color-stops(rgb(255,255,255),rgb(232,232,232)));
+$darker-greygreen-gradient:  linear-gradient(color-stops(rgb(38,38,33),rgb(86,86,73)));
 $button-gradient-blue: linear-gradient(color-stops(rgb(97,138,185),rgb(52,74,124)));
 $button-gradient-green: linear-gradient(color-stops(rgb(127,174,14),rgb(80,126,8)));
 $button-gradient-greyblue: linear-gradient(color-stops(rgb(129,170,191),rgb(75,103,122)));
@@ -50,11 +51,28 @@ body { font-size: emCalc(12px); line-height: 1.25em; }
 * custom snippet modules and custom class styling
 *
 **/
+
 /** Highlighted wrappers **/
 .highlighted-wrapper {
-  background: $medium-blue;
+  background: $medium-blue; color: white;
   &.greygreen-gradient { @include background-image($button-gradient-greygreen); color: rgb(229,230,213); }
   &.dark-greygreen { background: $dark-greygreen; color: rgb(195,196,182); }
+  &.darker-greygreen { @include background-image($darker-greygreen-gradient); color: white; }
+}
+
+/** Page Heading Titles **/
+.page-title {
+  background: url('/images/page-title-bg.png') repeat-x center left;
+  text-align: center;
+  h1 {
+    padding: 0 15px;
+    background: white;
+    display: inline-block;
+    text-align: center;
+    color: $medium-blue;
+    font-size: emCalc(24px);
+    font-weight: normal;
+  }
 }
 
 /** Buttons **/
@@ -73,7 +91,7 @@ $include-html-button-classes: false; //this frees up .button for our use
   &.greyblue {
     @include background-image($button-gradient-greyblue);
     border: 1px solid rgb(49,65,78);
-  @include text-shadow($dark-blue 1px 1px 2px);
+    @include text-shadow($dark-blue 1px 1px 2px);
   }
   &.green {
     @include background-image($button-gradient-green);
@@ -101,6 +119,15 @@ header {
       margin: 5px;
     }
     .button-wrapper:last-child .button { margin-left: 15px; }
+  }
+  .login-message {
+    text-align: center;
+    border-bottom: 1px solid rgb(155,155,132);
+    p {
+      display: inline-block;
+      padding: 7px 0;
+      margin-bottom: 0;
+    }
   }
   .main-nav {
     @include background-image($nav-gradient);
