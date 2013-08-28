@@ -7334,15 +7334,35 @@ body {
   background-image: linear-gradient(#7fae0e, #507e08);
   border: 1px solid #416607;
 }
+/* line 100, ../sass/_custom.scss */
+.button.segmented {
+  height: 39px;
+  padding-right: 40px;
+  overflow: hidden;
+  text-shadow: none;
+  font-weight: normal;
+  padding-top: 12px;
+}
+/* line 107, ../sass/_custom.scss */
+.button.segmented .arrow {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 32px;
+  height: 39px;
+  background: url("/images/segmented-button-arrow.png") no-repeat 0 0;
+  background-size: contain;
+}
 
 /** Header & Navigation **/
-/* line 104, ../sass/_custom.scss */
+/* line 122, ../sass/_custom.scss */
 header .session-nav {
   height: 48px;
   background: url("/images/header-bg.png") no-repeat 0 0;
   background-size: cover;
 }
-/* line 108, ../sass/_custom.scss */
+/* line 126, ../sass/_custom.scss */
 header .session-nav .header-logo a {
   display: inline-block;
   text-indent: -119988px;
@@ -7356,28 +7376,28 @@ header .session-nav .header-logo a {
   height: 40px;
   margin: 4px 10px;
 }
-/* line 116, ../sass/_custom.scss */
+/* line 134, ../sass/_custom.scss */
 header .session-nav .button {
   font-weight: normal;
   padding: 8px 10px;
   margin: 5px;
 }
-/* line 121, ../sass/_custom.scss */
+/* line 139, ../sass/_custom.scss */
 header .session-nav .button-wrapper:last-child .button {
   margin-left: 15px;
 }
-/* line 123, ../sass/_custom.scss */
+/* line 141, ../sass/_custom.scss */
 header .login-message {
   text-align: center;
   border-bottom: 1px solid #9b9b84;
 }
-/* line 126, ../sass/_custom.scss */
+/* line 144, ../sass/_custom.scss */
 header .login-message p {
   display: inline-block;
   padding: 7px 0;
   margin-bottom: 0;
 }
-/* line 132, ../sass/_custom.scss */
+/* line 150, ../sass/_custom.scss */
 header .main-nav {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #022257), color-stop(100%, #3f619b));
   background-image: -webkit-linear-gradient(#022257, #3f619b);
@@ -7385,11 +7405,11 @@ header .main-nav {
   background-image: -o-linear-gradient(#022257, #3f619b);
   background-image: linear-gradient(#022257, #3f619b);
 }
-/* line 134, ../sass/_custom.scss */
+/* line 152, ../sass/_custom.scss */
 header .main-nav .columns {
   text-align: center;
 }
-/* line 136, ../sass/_custom.scss */
+/* line 154, ../sass/_custom.scss */
 header .main-nav .columns a {
   display: inline-block;
   background: url("/images/main-nav_border-right.png") no-repeat top right;
@@ -7398,18 +7418,18 @@ header .main-nav .columns a {
   font-size: 1.0625em;
   width: 100%;
 }
-/* line 144, ../sass/_custom.scss */
+/* line 162, ../sass/_custom.scss */
 header .main-nav .columns:nth-child(3) a {
   padding: 5px 0;
   background: transparent;
 }
 
-/* line 149, ../sass/_custom.scss */
+/* line 167, ../sass/_custom.scss */
 footer {
   margin-top: 5px;
   border-top: 1px solid #aab7cc;
 }
-/* line 153, ../sass/_custom.scss */
+/* line 171, ../sass/_custom.scss */
 footer .newsletter-button a.button {
   width: 95%;
   padding: 10px 3px;
@@ -7419,7 +7439,7 @@ footer .newsletter-button a.button {
   font-size: 0.875em;
   text-decoration: underline;
 }
-/* line 161, ../sass/_custom.scss */
+/* line 179, ../sass/_custom.scss */
 footer .newsletter-button a.button .icon.letter {
   display: inline-block;
   position: absolute;
@@ -7430,14 +7450,14 @@ footer .newsletter-button a.button .icon.letter {
   background: url("/images/email-icon.png") no-repeat 0 0;
   background-size: cover;
 }
-/* line 174, ../sass/_custom.scss */
+/* line 192, ../sass/_custom.scss */
 footer .full-site-link a {
   display: inline-block;
   width: 100%;
   color: #c3c4b6;
   padding: 10px;
 }
-/* line 181, ../sass/_custom.scss */
+/* line 199, ../sass/_custom.scss */
 footer .copyright {
   font-size: 0.75em;
   line-height: 1.2em;
@@ -7445,11 +7465,11 @@ footer .copyright {
 }
 
 /** near me icon **/
-/* line 189, ../sass/_custom.scss */
+/* line 207, ../sass/_custom.scss */
 .button.near-me {
   padding-left: 24px !important;
 }
-/* line 191, ../sass/_custom.scss */
+/* line 209, ../sass/_custom.scss */
 .button.near-me .icon {
   display: inline-block;
   position: absolute;
@@ -7463,11 +7483,11 @@ footer .copyright {
 }
 
 /** Site Search Form **/
-/* line 206, ../sass/_custom.scss */
+/* line 224, ../sass/_custom.scss */
 .site-search .columns {
   padding: 10px 5px;
 }
-/* line 209, ../sass/_custom.scss */
+/* line 227, ../sass/_custom.scss */
 .site-search .search, .site-search .quicksearch {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -7486,21 +7506,21 @@ footer .copyright {
   margin-bottom: 0;
   height: 26px;
 }
-/* line 219, ../sass/_custom.scss */
+/* line 237, ../sass/_custom.scss */
 .site-search .quicksearch {
   background: url("/images/select_button.png") no-repeat center right;
   background-size: contain;
 }
 
 /** Inline Horizontal Button List **/
-/* line 226, ../sass/_custom.scss */
+/* line 244, ../sass/_custom.scss */
 .button-list {
   padding-top: 10px;
   text-align: center;
 }
 
 /** Title Bar **/
-/* line 232, ../sass/_custom.scss */
+/* line 250, ../sass/_custom.scss */
 .title-bar {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #223e71), color-stop(100%, #12223d));
   background-image: -webkit-linear-gradient(#223e71, #12223d);
@@ -7509,31 +7529,31 @@ footer .copyright {
   background-image: linear-gradient(#223e71, #12223d);
   padding: 6px 15px;
 }
-/* line 235, ../sass/_custom.scss */
+/* line 253, ../sass/_custom.scss */
 .title-bar h2 {
   display: inline-block;
   font-size: 15px;
   color: #efffff;
 }
-/* line 240, ../sass/_custom.scss */
+/* line 258, ../sass/_custom.scss */
 .title-bar .view-all {
   color: #c4dcf8;
   margin-left: 12px;
   text-decoration: underline;
 }
-/* line 244, ../sass/_custom.scss */
+/* line 262, ../sass/_custom.scss */
 .title-bar .view-all:hover {
   text-decoration: none;
 }
 
 /** Generic wrapper styles (for copy generally) **/
-/* line 248, ../sass/_custom.scss */
+/* line 266, ../sass/_custom.scss */
 .wrapper {
   color: #233b69;
 }
 
 /** vertical button lists **/
-/* line 254, ../sass/_custom.scss */
+/* line 272, ../sass/_custom.scss */
 ul.vertical-buttons li {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e8e8e8));
   background-image: -webkit-linear-gradient(#ffffff, #e8e8e8);
@@ -7542,30 +7562,30 @@ ul.vertical-buttons li {
   background-image: linear-gradient(#ffffff, #e8e8e8);
   border-bottom: 1px solid #16294b;
 }
-/* line 257, ../sass/_custom.scss */
+/* line 275, ../sass/_custom.scss */
 ul.vertical-buttons li a {
   display: inline-block;
   width: 100%;
   background: url("/images/chevron-right.png") no-repeat 97% center;
   padding: 17px 44px 17px 19px;
 }
-/* line 262, ../sass/_custom.scss */
+/* line 280, ../sass/_custom.scss */
 ul.vertical-buttons li a h3 {
   margin-bottom: 0;
 }
-/* line 265, ../sass/_custom.scss */
+/* line 283, ../sass/_custom.scss */
 ul.vertical-buttons li a p {
   margin-bottom: 0;
   color: #233b69;
   font-style: italic;
 }
-/* line 269, ../sass/_custom.scss */
+/* line 287, ../sass/_custom.scss */
 ul.vertical-buttons li a p .location {
   font-weight: bold;
 }
 
 /** Contact Details **/
-/* line 277, ../sass/_custom.scss */
+/* line 295, ../sass/_custom.scss */
 .contact-details {
   color: #233b69;
   padding: 20px 15px;

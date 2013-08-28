@@ -97,6 +97,24 @@ $include-html-button-classes: false; //this frees up .button for our use
     @include background-image($button-gradient-green);
     border: 1px solid rgb(65,102,7);
   }
+  &.segmented {
+    height: 39px;
+    padding-right: 40px;
+    overflow: hidden;
+    @include text-shadow(none);
+    font-weight: normal;
+    padding-top: 12px;
+    .arrow {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 32px;
+      height: 39px;
+      background: url('/images/segmented-button-arrow.png') no-repeat 0 0;
+      background-size: contain;
+    }
+  }
 }
 
 /** Header & Navigation **/
