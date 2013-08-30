@@ -148,6 +148,8 @@ header {
     }
   }
   .main-nav {
+    background: -ms-linear-gradient(rgb(2,34,87),rgb(63,97,155));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#022257', endColorstr='#3F619B');/*For IE7-8-9*/
     @include background-image($nav-gradient);
     .columns {
       text-align: center;
@@ -296,4 +298,20 @@ ul.vertical-buttons {
   color: $dark-blue;
   padding: 20px 15px;
   border-bottom: 1px solid rgb(170,183,204);
+}
+
+/** slider **/
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
 }

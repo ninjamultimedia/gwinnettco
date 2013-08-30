@@ -49,6 +49,15 @@
             %option(value="location1") Location One
             %option(value="location2") Location Two
     %section
+      #slider.swipe
+        .swipe-wrap
+          .slide
+            %img(src="/images/slide_sample_1.png")
+          .slide
+            %img(src="/images/slide_sample_2.png")
+          .slide
+            %img(src="/images/slide_sample_3.png")
+    %section
       .title-bar
         %h2 Online Services
         %a.view-all(href="#") view all
@@ -129,10 +138,7 @@
 
 
     /Included JS Files (Compressed)
-    :javascript
-      document.write('<script src=' +
-      ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
-      '.js><\/script>')
+    %script{ :src => "javascripts/vendor/jquery.js" }
 
     / Application Javascript
     %script{ :src => "javascripts/foundation/foundation.js" }
@@ -148,6 +154,7 @@
     //%script{ :src => "javascripts/foundation/foundation.section.js" }
     //%script{ :src => "javascripts/foundation/foundation.tooltips.js" }
     //%script{ :src => "javascripts/foundation/foundation.topbar.js" }
+    %script{ :src => "javascripts/vendor/swipe.js" }
 
     / Custom Javascript
     %script{ :src => "javascripts/script.js" }
@@ -155,4 +162,5 @@
     :javascript
       $(window).load(function() {
         $(document).foundation();
+        $('#slider').Swipe();
       });

@@ -7399,17 +7399,20 @@ header .login-message p {
 }
 /* line 150, ../sass/_custom.scss */
 header .main-nav {
+  background: -ms-linear-gradient(#022257, #3f619b);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#022257', endColorstr='#3F619B');
+  /*For IE7-8-9*/
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #022257), color-stop(100%, #3f619b));
   background-image: -webkit-linear-gradient(#022257, #3f619b);
   background-image: -moz-linear-gradient(#022257, #3f619b);
   background-image: -o-linear-gradient(#022257, #3f619b);
   background-image: linear-gradient(#022257, #3f619b);
 }
-/* line 152, ../sass/_custom.scss */
+/* line 154, ../sass/_custom.scss */
 header .main-nav .columns {
   text-align: center;
 }
-/* line 154, ../sass/_custom.scss */
+/* line 156, ../sass/_custom.scss */
 header .main-nav .columns a {
   display: inline-block;
   background: url("/images/main-nav_border-right.png") no-repeat top right;
@@ -7418,18 +7421,18 @@ header .main-nav .columns a {
   font-size: 1.0625em;
   width: 100%;
 }
-/* line 162, ../sass/_custom.scss */
+/* line 164, ../sass/_custom.scss */
 header .main-nav .columns:nth-child(3) a {
   padding: 5px 0;
   background: transparent;
 }
 
-/* line 167, ../sass/_custom.scss */
+/* line 169, ../sass/_custom.scss */
 footer {
   margin-top: 5px;
   border-top: 1px solid #aab7cc;
 }
-/* line 171, ../sass/_custom.scss */
+/* line 173, ../sass/_custom.scss */
 footer .newsletter-button a.button {
   width: 95%;
   padding: 10px 3px;
@@ -7439,7 +7442,7 @@ footer .newsletter-button a.button {
   font-size: 0.875em;
   text-decoration: underline;
 }
-/* line 179, ../sass/_custom.scss */
+/* line 181, ../sass/_custom.scss */
 footer .newsletter-button a.button .icon.letter {
   display: inline-block;
   position: absolute;
@@ -7450,14 +7453,14 @@ footer .newsletter-button a.button .icon.letter {
   background: url("/images/email-icon.png") no-repeat 0 0;
   background-size: cover;
 }
-/* line 192, ../sass/_custom.scss */
+/* line 194, ../sass/_custom.scss */
 footer .full-site-link a {
   display: inline-block;
   width: 100%;
   color: #c3c4b6;
   padding: 10px;
 }
-/* line 199, ../sass/_custom.scss */
+/* line 201, ../sass/_custom.scss */
 footer .copyright {
   font-size: 0.75em;
   line-height: 1.2em;
@@ -7465,11 +7468,11 @@ footer .copyright {
 }
 
 /** near me icon **/
-/* line 207, ../sass/_custom.scss */
+/* line 209, ../sass/_custom.scss */
 .button.near-me {
   padding-left: 24px !important;
 }
-/* line 209, ../sass/_custom.scss */
+/* line 211, ../sass/_custom.scss */
 .button.near-me .icon {
   display: inline-block;
   position: absolute;
@@ -7483,11 +7486,11 @@ footer .copyright {
 }
 
 /** Site Search Form **/
-/* line 224, ../sass/_custom.scss */
+/* line 226, ../sass/_custom.scss */
 .site-search .columns {
   padding: 10px 5px;
 }
-/* line 227, ../sass/_custom.scss */
+/* line 229, ../sass/_custom.scss */
 .site-search .search, .site-search .quicksearch {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -7506,21 +7509,21 @@ footer .copyright {
   margin-bottom: 0;
   height: 26px;
 }
-/* line 237, ../sass/_custom.scss */
+/* line 239, ../sass/_custom.scss */
 .site-search .quicksearch {
   background: url("/images/select_button.png") no-repeat center right;
   background-size: contain;
 }
 
 /** Inline Horizontal Button List **/
-/* line 244, ../sass/_custom.scss */
+/* line 246, ../sass/_custom.scss */
 .button-list {
   padding-top: 10px;
   text-align: center;
 }
 
 /** Title Bar **/
-/* line 250, ../sass/_custom.scss */
+/* line 252, ../sass/_custom.scss */
 .title-bar {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #223e71), color-stop(100%, #12223d));
   background-image: -webkit-linear-gradient(#223e71, #12223d);
@@ -7529,31 +7532,31 @@ footer .copyright {
   background-image: linear-gradient(#223e71, #12223d);
   padding: 6px 15px;
 }
-/* line 253, ../sass/_custom.scss */
+/* line 255, ../sass/_custom.scss */
 .title-bar h2 {
   display: inline-block;
   font-size: 15px;
   color: #efffff;
 }
-/* line 258, ../sass/_custom.scss */
+/* line 260, ../sass/_custom.scss */
 .title-bar .view-all {
   color: #c4dcf8;
   margin-left: 12px;
   text-decoration: underline;
 }
-/* line 262, ../sass/_custom.scss */
+/* line 264, ../sass/_custom.scss */
 .title-bar .view-all:hover {
   text-decoration: none;
 }
 
 /** Generic wrapper styles (for copy generally) **/
-/* line 266, ../sass/_custom.scss */
+/* line 268, ../sass/_custom.scss */
 .wrapper {
   color: #233b69;
 }
 
 /** vertical button lists **/
-/* line 272, ../sass/_custom.scss */
+/* line 274, ../sass/_custom.scss */
 ul.vertical-buttons li {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e8e8e8));
   background-image: -webkit-linear-gradient(#ffffff, #e8e8e8);
@@ -7562,32 +7565,53 @@ ul.vertical-buttons li {
   background-image: linear-gradient(#ffffff, #e8e8e8);
   border-bottom: 1px solid #16294b;
 }
-/* line 275, ../sass/_custom.scss */
+/* line 277, ../sass/_custom.scss */
 ul.vertical-buttons li a {
   display: inline-block;
   width: 100%;
   background: url("/images/chevron-right.png") no-repeat 97% center;
   padding: 17px 44px 17px 19px;
 }
-/* line 280, ../sass/_custom.scss */
+/* line 282, ../sass/_custom.scss */
 ul.vertical-buttons li a h3 {
   margin-bottom: 0;
 }
-/* line 283, ../sass/_custom.scss */
+/* line 285, ../sass/_custom.scss */
 ul.vertical-buttons li a p {
   margin-bottom: 0;
   color: #233b69;
   font-style: italic;
 }
-/* line 287, ../sass/_custom.scss */
+/* line 289, ../sass/_custom.scss */
 ul.vertical-buttons li a p .location {
   font-weight: bold;
 }
 
 /** Contact Details **/
-/* line 295, ../sass/_custom.scss */
+/* line 297, ../sass/_custom.scss */
 .contact-details {
   color: #233b69;
   padding: 20px 15px;
   border-bottom: 1px solid #aab7cc;
+}
+
+/** slider **/
+/* line 304, ../sass/_custom.scss */
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+
+/* line 309, ../sass/_custom.scss */
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 313, ../sass/_custom.scss */
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
 }
