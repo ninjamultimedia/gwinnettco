@@ -55,9 +55,20 @@ body { font-size: emCalc(12px); line-height: 1.25em; }
 /** Highlighted wrappers **/
 .highlighted-wrapper {
   background: $medium-blue; color: white;
-  &.greygreen-gradient { @include background-image($button-gradient-greygreen); color: rgb(229,230,213); }
-  &.dark-greygreen { background: $dark-greygreen; color: rgb(195,196,182); }
-  &.darker-greygreen { @include background-image($darker-greygreen-gradient); color: white; }
+  &.greygreen-gradient {
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#6B6B5C', endColorstr='#4E4D41');/*For IE7-8-9*/
+    @include background-image($button-gradient-greygreen);
+    color: rgb(229,230,213);
+  }
+  &.dark-greygreen {
+    background: $dark-greygreen;
+    color: rgb(195,196,182);
+  }
+  &.darker-greygreen {
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#262621', endColorstr='#565649');/*For IE7-8-9*/
+    @include background-image($darker-greygreen-gradient);
+    color: white;
+  }
 }
 
 /** Page Heading Titles **/
@@ -79,21 +90,27 @@ body { font-size: emCalc(12px); line-height: 1.25em; }
 $include-html-button-classes: false; //this frees up .button for our use
 .button {
   @include border-radius(10px, 10px);
+  behavior: url('javascripts/vendor/PIE.htc');
+  overflow: hidden;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#618AB9', endColorstr='#344A7C');/*For IE7-8-9*/
   @include background-image($button-gradient-blue);
   border: 1px solid $dark-blue;
   @include box-shadow(none);
   @include text-shadow(lighten(black,30%) 1px 1px 4px);
   white-space: nowrap;
   &.greygreen {
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#6B6B5C', endColorstr='#4E4D41');/*For IE7-8-9*/
     @include background-image($button-gradient-greygreen);
     border: 1px solid $dark-blue;
   }
   &.greyblue {
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#81AABF', endColorstr='#4B677A');/*For IE7-8-9*/
     @include background-image($button-gradient-greyblue);
     border: 1px solid rgb(49,65,78);
     @include text-shadow($dark-blue 1px 1px 2px);
   }
   &.green {
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#7FAE0E', endColorstr='#507E08');/*For IE7-8-9*/
     @include background-image($button-gradient-green);
     border: 1px solid rgb(65,102,7);
   }
@@ -230,6 +247,7 @@ footer {
     @include box-shadow(none);
     @include appearance(none);
     @include border-radius(0);
+    behavior: url('javascripts/vendor/PIE.htc');
     border: 1px solid gray;
     color: gray;
     padding: 4px;
@@ -250,6 +268,7 @@ footer {
 
 /** Title Bar **/
 .title-bar {
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#223E71', endColorstr='#12223D');/*For IE7-8-9*/
   @include background-image($header-gradient);
   padding: 6px 15px;
   h2 {
@@ -272,6 +291,7 @@ footer {
 /** vertical button lists **/
 ul.vertical-buttons {
   li {
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFF', endColorstr='#E8E8E8');/*For IE7-8-9*/
     @include background-image($subtle-gradient);
     border-bottom: 1px solid rgb(22,41,75);
     a {
