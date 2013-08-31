@@ -49,14 +49,15 @@
             %option(value="location1") Location One
             %option(value="location2") Location Two
     %section
-      #slider.swipe
-        .swipe-wrap
-          .slide
-            %img(src="/images/slide_sample_1.png")
-          .slide
-            %img(src="/images/slide_sample_2.png")
-          .slide
-            %img(src="/images/slide_sample_3.png")
+      .slider-wrapper
+        #slider.swipe
+          .swipe-wrap
+            .slide
+              %img(src="/images/slide_sample_1.png")
+            .slide
+              %img(src="/images/slide_sample_2.png")
+            .slide
+              %img(src="/images/slide_sample_3.png")
     %section
       .title-bar
         %h2 Online Services
@@ -162,5 +163,4 @@
     :javascript
       $(window).load(function() {
         $(document).foundation();
-        $('#slider').Swipe();
       });

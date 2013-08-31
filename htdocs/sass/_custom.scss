@@ -315,3 +315,34 @@ ul.vertical-buttons {
   width:100%;
   position: relative;
 }
+.slider-wrapper {
+
+}
+.slide {
+  width: 125px;
+  padding: 3px;
+  img {
+    width: 100%;
+    display: inline-block;
+  }
+}
+.slider-index-indicator {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 0;
+  text-align: center;
+  li {
+    display: inline-block;
+    width: 44px;
+    padding: 1px;
+    margin: 0;
+    visibility: hidden;
+    a {
+      display: inline-block;
+      width: 100%;
+      height: 10px;
+      background: $medium-blue;
+    }
+    &.active a { background: $dark-blue; }
+  }
+}
