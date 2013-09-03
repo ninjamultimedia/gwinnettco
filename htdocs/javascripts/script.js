@@ -37,7 +37,7 @@ $(window).ready( function() {
   }
 
   window.slider = new Swipe(document.getElementById('slider'), {
-    auto: 1200,
+    auto: 3000,
     callback: indexChanged
   });
 

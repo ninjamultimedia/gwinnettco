@@ -345,6 +345,22 @@ ul.vertical-buttons {
     width: 100%;
     display: inline-block;
   }
+  a {
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+  }
+  .copy {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    background: rgba(0,0,0,.7);
+    p {
+      color: white;
+      margin-bottom: 0;
+    }
+  }
 }
 .slider-index-indicator {
   display: block;

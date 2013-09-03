@@ -2,6 +2,9 @@
 <!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
 <!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
 <!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IEMobile]><html lang="en" class="no-js iemobile"> <![endif]-->
+
+
 <!--[if gt IE 8]><!-->
 %html.no-js{ :lang => "en" }
   <!--<![endif]-->
@@ -53,11 +56,20 @@
         #slider.swipe
           .swipe-wrap
             .slide
-              %img(src="/images/slide_sample_1.png")
+              %a(href="#")
+                %img(src="/images/slide_sample_1.png")
+                .copy
+                  %p Animal shelter hosts annual Adoption Explosion
             .slide
-              %img(src="/images/slide_sample_2.png")
+              %a(href="#")
+                %img(src="/images/slide_sample_2.png")
+                .copy
+                  %p Understanding your property
             .slide
-              %img(src="/images/slide_sample_3.png")
+              %a(href="#")
+                %img(src="/images/slide_sample_3.png")
+                .copy
+                  %p Some other headline
     %section
       .title-bar
         %h2 Online Services
