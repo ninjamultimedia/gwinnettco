@@ -55,6 +55,7 @@ body { font-size: emCalc(12px); line-height: 1.25em; }
 /** Highlighted wrappers **/
 .highlighted-wrapper {
   background: $medium-blue; color: white;
+  margin-bottom: 10px;
   &.greygreen-gradient {
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#6B6B5C', endColorstr='#4E4D41');/*For IE7-8-9*/
     @include background-image($button-gradient-greygreen);
@@ -68,6 +69,19 @@ body { font-size: emCalc(12px); line-height: 1.25em; }
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#262621', endColorstr='#565649');/*For IE7-8-9*/
     @include background-image($darker-greygreen-gradient);
     color: white;
+  }
+  .row {
+    padding: 10px;
+    h3 {
+      font-weight: normal;
+      color: white;
+      margin: 0;
+      padding: 10px 0 5px 0;
+    }
+    p {
+      color: white;
+    }
+
   }
 }
 
