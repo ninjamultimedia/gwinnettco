@@ -51,6 +51,56 @@
             %option(value="") Find it fast
             %option(value="location1") Location One
             %option(value="location2") Location Two
+    .page-title
+      %h1 Search Results
+    %section
+      .title-bar
+        %h2 Found <span class="nobold">(3) for "Water Bill"</span>
+      .wrapper
+        %ul.vertical-buttons
+          %li
+            %a
+              .result-details
+                %h3 How to pay your <span class="result-key">Water Bill</span>
+                %p Lorem ipsum dolor sit amet, consecteur adpicscing elit. Donec vel felis et leo varius lacina in vel nisi. Lorem ipsum dolor sit amet consecteur adpicscing elit. Donec cel felis
+          %li
+            %a
+              .result-details
+                %h3 New <span class="result-key">Water Bill</span> rules
+                %p Lorem ipsum dolor sit amet, consecteur adpicscing elit. Donec vel felis et leo varius lacina in vel nisi. Lorem ipsum dolor sit amet consecteur adpicscing elit. Donec cel felis
+          %li
+            %a
+              .result-details
+                %h3 Go paperless!
+                %p Lorem ipsum dolor sit <span class="result-key">Water Bill</span> amet, consecteur adpicscing elit. Donec vel felis et leo varius lacina in vel nisi. Lorem ipsum dolor sit amet consecteur adpicscing elit. Donec cel felis
+    %section
+      .title-bar
+        %h2 Contact Us
+        %a.view-all(href="#") view all contacts
+      .wrapper
+        .contact-details
+          .row
+            %h3.small-12.columns Gwinnett Justice  & Administration Center
+          .row
+            .small-7.columns
+              %p 75 Langley Drive<br />Lawrenceville, GA 30046
+            .small-5.columns
+              %p Primary Phone: <a href="tel:770.822.8000">770.822.8000</a>
+          .row.button-list
+            .button-wrapper.small-4.columns
+              %a.button Map It
+            .button-wrapper.small-4.columns
+              %a.button Directions
+            .button-wrapper.small-4.columns
+              %a.button Call
+    %footer
+      .row.button-list
+        .button-wrapper.small-12.columns.newsletter-button
+          %a.button.green(href="#") Sign up for Gwinnett County e-mail newsletters <span class="icon letter"></span>
+      .highlighted-wrapper.greygreen-gradient.text-center.full-site-link
+        %a(href="#") ::: <span style="text-decoration: underline;">View Full Site</span> :::
+      .highlighted-wrapper.dark-greygreen.text-center.copyright
+        %p Official Site of Gwinnett County Government<br />Copyright 2012, Gwinnett County Board of Commissioners
 
 
     /Included JS Files (Compressed)
