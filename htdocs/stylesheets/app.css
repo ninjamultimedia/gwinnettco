@@ -7605,9 +7605,14 @@ ul.vertical-buttons li a p {
 ul.vertical-buttons li a p .location {
   font-weight: bold;
 }
+/* line 311, ../sass/_custom.scss */
+ul.vertical-buttons li a p .link {
+  font-style: normal;
+  text-decoration: underline;
+}
 
 /** Contact Details **/
-/* line 317, ../sass/_custom.scss */
+/* line 318, ../sass/_custom.scss */
 .contact-details {
   color: #233b69;
   padding: 20px 15px;
@@ -7615,43 +7620,43 @@ ul.vertical-buttons li a p .location {
 }
 
 /** slider **/
-/* line 324, ../sass/_custom.scss */
+/* line 325, ../sass/_custom.scss */
 .swipe {
   overflow: hidden;
   visibility: hidden;
   position: relative;
 }
 
-/* line 329, ../sass/_custom.scss */
+/* line 330, ../sass/_custom.scss */
 .swipe-wrap {
   overflow: hidden;
   position: relative;
 }
 
-/* line 333, ../sass/_custom.scss */
+/* line 334, ../sass/_custom.scss */
 .swipe-wrap > div {
   float: left;
   width: 100%;
   position: relative;
 }
 
-/* line 341, ../sass/_custom.scss */
+/* line 342, ../sass/_custom.scss */
 .slide {
   width: 125px;
   padding: 3px;
 }
-/* line 344, ../sass/_custom.scss */
+/* line 345, ../sass/_custom.scss */
 .slide img {
   width: 100%;
   display: inline-block;
 }
-/* line 348, ../sass/_custom.scss */
+/* line 349, ../sass/_custom.scss */
 .slide a {
   display: inline-block;
   position: relative;
   overflow: hidden;
 }
-/* line 353, ../sass/_custom.scss */
+/* line 354, ../sass/_custom.scss */
 .slide .copy {
   position: absolute;
   bottom: 0;
@@ -7659,20 +7664,20 @@ ul.vertical-buttons li a p .location {
   padding: 5px;
   background: rgba(0, 0, 0, 0.7);
 }
-/* line 359, ../sass/_custom.scss */
+/* line 360, ../sass/_custom.scss */
 .slide .copy p {
   color: white;
   margin-bottom: 0;
 }
 
-/* line 365, ../sass/_custom.scss */
+/* line 366, ../sass/_custom.scss */
 .slider-index-indicator {
   display: block;
   overflow: hidden;
   margin-bottom: 0;
   text-align: center;
 }
-/* line 370, ../sass/_custom.scss */
+/* line 371, ../sass/_custom.scss */
 .slider-index-indicator li {
   display: inline-block;
   width: 44px;
@@ -7680,14 +7685,14 @@ ul.vertical-buttons li a p .location {
   margin: 0;
   visibility: hidden;
 }
-/* line 376, ../sass/_custom.scss */
+/* line 377, ../sass/_custom.scss */
 .slider-index-indicator li a {
   display: inline-block;
   width: 100%;
   height: 10px;
   background: #4d7189;
 }
-/* line 382, ../sass/_custom.scss */
+/* line 383, ../sass/_custom.scss */
 .slider-index-indicator li.active a {
   background: #233b69;
 }

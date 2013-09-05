@@ -1,9 +1,19 @@
-#topNav.contain-to-grid
-    %nav.top-bar
-      %ul.title-area
-        %li.name
-          %h1
-            %a(href="#") TempLinc
-        %li.toggle-bar.menu-icon
-          %a(href="#")
-            %span
+%header
+  .row.session-nav
+    .header-logo.small-6.columns
+      %a(href="#") Home
+    .button-wrapper.small-3.columns
+      %a.button.greyblue.near-me(href="#")
+        %span.icon
+        Near Me
+    .button-wrapper.small-3.columns
+      %a.button.greyblue(href="#") Log In
+  .row.highlighted-wrapper.darker-greygreen.login-message
+    %p ::: Welcome, Jane Doe :::
+  .row.main-nav
+    .small-4.columns
+      %a(href="#") Home
+    .small-4.columns
+      %a(href="#") Departments
+    .small-4.columns
+      %a(href="#") Important<br />Numbers
