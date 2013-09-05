@@ -54,34 +54,33 @@ body { font-size: emCalc(12px); line-height: 1.25em; }
 
 /** Highlighted wrappers **/
 .highlighted-wrapper {
-  background: $medium-blue; color: white;
   margin-bottom: 10px;
+  &.medium-blue {
+    background: $medium-blue;
+    h3, p { color: white; }
+  }
   &.greygreen-gradient {
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#6B6B5C', endColorstr='#4E4D41');/*For IE7-8-9*/
     @include background-image($button-gradient-greygreen);
-    color: rgb(229,230,213);
+    h3, p { color: rgb(229,230,213); }
   }
   &.dark-greygreen {
     background: $dark-greygreen;
-    color: rgb(195,196,182);
+    h3, p { color: rgb(195,196,182); }
   }
   &.darker-greygreen {
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#262621', endColorstr='#565649');/*For IE7-8-9*/
     @include background-image($darker-greygreen-gradient);
-    color: white;
+    h3, p { color: white; }
   }
   .row {
     padding: 10px;
     h3 {
       font-weight: normal;
-      color: white;
       margin: 0;
       padding: 10px 0 5px 0;
     }
-    p {
-      color: white;
-    }
-
+    p { }
   }
 }
 
