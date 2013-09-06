@@ -21,6 +21,7 @@ $off-white: rgb(239,255,255);
 $nav-gradient: linear-gradient(color-stops(rgb(2,34,87),rgb(63,97,155)));
 $header-gradient: linear-gradient(color-stops(rgb(34,62,113),rgb(18,34,61)));
 $subtle-gradient:  linear-gradient(color-stops(rgb(255,255,255),rgb(232,232,232)));
+$grey-gradient: linear-gradient(color-stops(rgb(221,221,221),rgb(202,202,202)));
 $darker-greygreen-gradient:  linear-gradient(color-stops(rgb(38,38,33),rgb(86,86,73)));
 $button-gradient-blue: linear-gradient(color-stops(rgb(97,138,185),rgb(52,74,124)));
 $button-gradient-green: linear-gradient(color-stops(rgb(127,174,14),rgb(80,126,8)));
@@ -314,15 +315,6 @@ footer {
   }
 }
 
-/** Near Me search results styling **/
-.nearme-results {
-  li {
-    background-image: none !important;
-    border-bottom: none !important;
-    ul { margin-left: 0 !important; }
-  }
-}
-
 /** Inline Horizontal Button List **/
 .button-list {
   padding-top: 10px;
@@ -372,6 +364,68 @@ ul.vertical-buttons {
         .location { font-weight: bold; }
         .date { }
         .link { font-style: normal; text-decoration: underline; }
+      }
+    }
+  }
+}
+
+
+/** Near Me search results styling **/
+ul.nearme-results {
+  ul, ul li ul { margin: 0 !important; }
+  li {
+    background-image: none !important;
+    border-bottom: none !important;
+    a {
+      border-bottom: 1px solid $dark-blue;
+      padding: 0;
+      .icon {
+        display: inline-block;
+        padding: 10px;
+        width: 20%;
+        vertical-align: top;
+      }
+      h3 {
+        display: inline-block;
+        padding: 10px;
+        max-width: 65%;
+        border-left: 1px solid #bfcad1;
+        line-height: 38px;
+        white-space: nowrap;
+        font-size: emCalc(18px);
+      }
+    }
+  }
+  li.parent {
+    a {
+      background: -ms-linear-gradient(rgb(255,255,255),rgb(232,232,232));
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFF', endColorstr='#E8E8E8');/*For IE7-8-9*/
+      @include background-image(image-url('../images/nearme_icon-chevron.png'), $subtle-gradient );
+      background-position: 97% center;
+      background-repeat: no-repeat;
+    }
+    ul {
+      display: none;
+    }
+    &.expanded {
+      > a {
+        background: -ms-linear-gradient(rgb(221,221,221),rgb(202,202,202));
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#DDDDDD', endColorstr='#CACACA');/*For IE7-8-9*/
+        @include background-image(image-url('../images/nearme_icon-chevron_active.png'), $grey-gradient );
+      }
+      > ul { display: block; }
+    }
+  }
+  li.parent.main {
+    > a {
+      background: -ms-linear-gradient(rgb(2,34,87),rgb(63,97,155));
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#223E71', endColorstr='#12223D');/*For IE7-8-9*/
+      @include background-image(image-url('../images/nearme_icon-chevron_main.png'),$header-gradient);
+      h3 { color: white; }
+    }
+    &.expanded {
+      > a {
+        @include background-image(image-url('../images/nearme_icon-chevron_main_active.png'),$header-gradient);
       }
     }
   }
