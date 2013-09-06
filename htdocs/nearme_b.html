@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IEMobile]><html lang="en" class="no-js iemobile"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js' lang='en'>
+  <!--<![endif]-->
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <title>
+      Gwinnett County Government - Mobile Site
+    </title>
+    <link href='stylesheets/app.css' media='all' rel='stylesheet'>
+    <script src='javascripts/vendor/custom.modernizr.js'></script>
+  </head>
+  <body>
+    <header>
+      <div class='row session-nav'>
+        <div class='header-logo small-6 columns'>
+          <a href='#'>Home</a>
+        </div>
+        <div class='button-wrapper small-3 columns'>
+          <a class='button greyblue near-me' href='#'>
+            <span class='icon'></span>
+            Near Me
+          </a>
+        </div>
+        <div class='button-wrapper small-3 columns'>
+          <a class='button greyblue' href='#'>Log In</a>
+        </div>
+      </div>
+      <div class='row highlighted-wrapper darker-greygreen login-message'>
+        <p>::: Welcome, Jane Doe :::</p>
+      </div>
+      <div class='row main-nav'>
+        <div class='small-4 columns'>
+          <a href='index.html'>Home</a>
+        </div>
+        <div class='small-4 columns'>
+          <a href='departments.html'>Departments</a>
+        </div>
+        <div class='small-4 columns'>
+          <a href='emergency_contacts.html'>Important<br />Numbers</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <form class='site-search row'>
+        <div class='small-6 columns'>
+          <input class='search' name='search' onblur="if(this.value == '') { this.value = 'Search'; }" onfocus="if(this.value == 'Search') { this.value = ''; }" type='text' value='Search'>
+        </div>
+        <div class='small-6 columns'>
+          <select class='quicksearch'>
+            <option value=''>Find it fast</option>
+            <option value='location1'>Location One</option>
+            <option value='location2'>Location Two</option>
+          </select>
+        </div>
+      </form>
+    </section>
+    <div class='page-title'>
+      <h1>Near Me</h1>
+    </div>
+    <section class='highlighted-wrapper medium-blue'>
+      <form class='nearme-param'>
+        <div class='row'>
+          <div class='small-3 columns'>
+            <label for='distance'>Distance:</label>
+          </div>
+          <div class='small-9 columns'>
+            <select class='distance' name='distance'>
+              <option value='1'>1 mile</option>
+              <option value='5'>5 miles</option>
+              <option value='10'>10 miles</option>
+            </select>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='small-3 columns'>
+            <label for='activity'>Activity:</label>
+          </div>
+          <div class='small-9 columns'>
+            <select class='activity' name='activity'>
+              <option selected='selected' value='parks_recreation'>Parks and Recreation</option>
+              <option value='administration'>Administration</option>
+              <option value='community_service'>Community Service</option>
+            </select>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section>
+      <div class='map-wrapper'>
+        <div id='map-canvas'></div>
+      </div>
+    </section>
+    <section>
+      <ul class='nearme-results vertical-buttons'>
+        <li>
+          <a class='parent main'>
+            <h3>Parks and Recreation <span class="nobold">(20)</span></h3>
+          </a>
+          <ul class='vertical-buttons parent'>
+            <li>
+              <a>
+                <h3>Playground <span class="nobold">(5)</span></h3>
+              </a>
+            </li>
+            <li>
+              <a>
+                <h3>Camping Area <span class="nobold">(3)</span></h3>
+              </a>
+            </li>
+            <li>
+              <a>
+                <h3>Boat Launch <span class="nobold">(2)</span></h3>
+              </a>
+            </li>
+            <li>
+              <a>
+                <h3>Picnic <span class="nobold">(7)</span></h3>
+              </a>
+            </li>
+            <li>
+              <a>
+                <h3>Swimming <span class="nobold">(7)</span></h3>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <div class='title-bar'>
+        <h2>Contact Us</h2>
+        <a class='view-all' href='#'>view all contacts</a>
+      </div>
+      <div class='wrapper'>
+        <div class='contact-details'>
+          <div class='row'>
+            <h3 class='small-12 columns'>Gwinnett Justice  & Administration Center</h3>
+          </div>
+          <div class='row'>
+            <div class='small-7 columns'>
+              <p>75 Langley Drive<br />Lawrenceville, GA 30046</p>
+            </div>
+            <div class='small-5 columns'>
+              <p>Primary Phone: <a href="tel:770.822.8000">770.822.8000</a></p>
+            </div>
+          </div>
+          <div class='row button-list'>
+            <div class='button-wrapper small-4 columns'>
+              <a class='button'>Map It</a>
+            </div>
+            <div class='button-wrapper small-4 columns'>
+              <a class='button'>Directions</a>
+            </div>
+            <div class='button-wrapper small-4 columns'>
+              <a class='button'>Call</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class='row button-list'>
+        <div class='button-wrapper small-12 columns newsletter-button'>
+          <a class='button green' href='#'>Sign up for Gwinnett County e-mail newsletters <span class="icon letter"></span></a>
+        </div>
+      </div>
+      <div class='highlighted-wrapper greygreen-gradient text-center full-site-link'>
+        <a href='#'>::: <span style="text-decoration: underline;">View Full Site</span> :::</a>
+      </div>
+      <div class='highlighted-wrapper dark-greygreen text-center copyright'>
+        <p>Official Site of Gwinnett County Government<br />Copyright 2012, Gwinnett County Board of Commissioners</p>
+      </div>
+    </footer>
+    <!-- Included JS Files (Compressed) -->
+    <script src='javascripts/vendor/jquery.js'></script>
+    <!-- Application Javascript -->
+    <script src='javascripts/foundation/foundation.js'></script>
+    <!-- %script{ :src => "javascripts/foundation/foundation.alerts.js" } -->
+    <!-- %script{ :src => "javascripts/foundation/foundation.clearing.js" } -->
+    <!-- %script{ :src => "javascripts/foundation/foundation.cookie.js" } -->
+    <!-- %script{ :src => "javascripts/foundation/foundation.dropdown.js" } -->
+    <!-- %script{ :src => "javascripts/foundation/foundation.forms.js" } -->
+    <!-- %script{ :src => "javascripts/foundation/foundation.interchange.js" } -->
+    <!-- %script{ :src => "javascripts/foundation/foundation.orbit.js" } -->
+    <!-- %script{ :src => "javascripts/foundation/foundation.placeholder.js" } -->
+    <!-- %script{ :src => "javascripts/foundation/foundation.reveal.js" } -->
+    <!-- %script{ :src => "javascripts/foundation/foundation.section.js" } -->
+    <!-- %script{ :src => "javascripts/foundation/foundation.tooltips.js" } -->
+    <!-- %script{ :src => "javascripts/foundation/foundation.topbar.js" } -->
+    <script src='javascripts/vendor/swipe.js'></script>
+    <!-- Custom Javascript -->
+    <script src='javascripts/script.js'></script>
+    <!-- Google Maps Javascript API v3 -->
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyA32rCw0iGKrJ0PKXVEtuqYHa3TC8yFNlo&amp;sensor=true'></script>
+    <script src='javascripts/googlemaps.js'></script>
+    <script>
+      $(window).load(function() {
+        $(document).foundation();
+      });
+    </script>
+  </body>
+</html>

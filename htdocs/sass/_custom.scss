@@ -314,6 +314,15 @@ footer {
   }
 }
 
+/** Near Me search results styling **/
+.nearme-results {
+  li {
+    background-image: none !important;
+    border-bottom: none !important;
+    ul { margin-left: 0 !important; }
+  }
+}
+
 /** Inline Horizontal Button List **/
 .button-list {
   padding-top: 10px;
