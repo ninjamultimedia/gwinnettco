@@ -88,7 +88,7 @@ body { font-size: emCalc(12px); line-height: 1.25em; }
 
 /** Page Heading Titles **/
 .page-title {
-  background: url('/images/page-title-bg.png') repeat-x center left;
+  background: url('../images/page-title-bg.png') repeat-x center left;
   text-align: center;
   h1 {
     padding: 0 15px;
@@ -143,7 +143,7 @@ $include-html-button-classes: false; //this frees up .button for our use
       top: 0;
       width: 32px;
       height: 39px;
-      background: url('/images/segmented-button-arrow.png') no-repeat 0 0;
+      background: url('../images/segmented-button-arrow.png') no-repeat 0 0;
       background-size: contain;
     }
   }
@@ -153,11 +153,11 @@ $include-html-button-classes: false; //this frees up .button for our use
 header {
   .session-nav {
     height: 48px;
-    background: url('/images/header-bg.png') no-repeat 0 0;
+    background: url('../images/header-bg.png') no-repeat 0 0;
     background-size: cover;
     .header-logo a {
       display: inline-block;
-      @include replace-text('/images/header-logo.png');
+      @include replace-text('../images/header-logo.png');
       background-size:cover;
       width: 147px;
       height: 40px;
@@ -187,7 +187,7 @@ header {
       text-align: center;
       a {
         display: inline-block;
-        background: url('/images/main-nav_border-right.png') no-repeat top right;
+        background: url('../images/main-nav_border-right.png') no-repeat top right;
         padding: 12px 0;
         color: white;
         font-size: emCalc(17px);
@@ -217,7 +217,7 @@ footer {
         height: 15px;
         right: 10px;
         top: 9px;
-        background: url('/images/email-icon.png') no-repeat 0 0;
+        background: url('../images/email-icon.png') no-repeat 0 0;
         background-size: cover;
       }
     }
@@ -244,7 +244,7 @@ footer {
     display: inline-block;
     position: absolute;
     overflow: hidden;
-    background: url('/images/radar.png') no-repeat 0 0;
+    background: url('../images/radar.png') no-repeat 0 0;
     background-size: cover;
     width: 15px;
     height: 15px;
@@ -270,7 +270,7 @@ footer {
     height: 26px;
   }
   .quicksearch {
-    background: url('/images/select_button.png') no-repeat center right;
+    background: url('../images/select_button.png') no-repeat center right;
     background-size: contain;
   }
 }
@@ -312,7 +312,7 @@ ul.vertical-buttons {
     a {
       display: inline-block;
       width: 100%;
-      background: url("/images/chevron-right.png") no-repeat 97% center;
+      background: url("../images/chevron-right.png") no-repeat 97% center;
       padding: 17px 44px 17px 19px;
       h3 {
         margin-bottom: 0;

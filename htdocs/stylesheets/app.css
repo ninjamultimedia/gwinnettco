@@ -7309,7 +7309,7 @@ body {
 /** Page Heading Titles **/
 /* line 90, ../sass/_custom.scss */
 .page-title {
-  background: url("/images/page-title-bg.png") repeat-x center left;
+  background: url("../images/page-title-bg.png") repeat-x center left;
   text-align: center;
 }
 /* line 93, ../sass/_custom.scss */
@@ -7396,7 +7396,7 @@ body {
   top: 0;
   width: 32px;
   height: 39px;
-  background: url("/images/segmented-button-arrow.png") no-repeat 0 0;
+  background: url("../images/segmented-button-arrow.png") no-repeat 0 0;
   background-size: contain;
 }
 
@@ -7404,7 +7404,7 @@ body {
 /* line 154, ../sass/_custom.scss */
 header .session-nav {
   height: 48px;
-  background: url("/images/header-bg.png") no-repeat 0 0;
+  background: url("../images/header-bg.png") no-repeat 0 0;
   background-size: cover;
 }
 /* line 158, ../sass/_custom.scss */
@@ -7413,7 +7413,7 @@ header .session-nav .header-logo a {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('/images/header-logo.png?1377544066');
+  background-image: url('/images/../images/header-logo.png?1377544066');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -7460,7 +7460,7 @@ header .main-nav .columns {
 /* line 188, ../sass/_custom.scss */
 header .main-nav .columns a {
   display: inline-block;
-  background: url("/images/main-nav_border-right.png") no-repeat top right;
+  background: url("../images/main-nav_border-right.png") no-repeat top right;
   padding: 12px 0;
   color: white;
   font-size: 1.0625em;
@@ -7495,7 +7495,7 @@ footer .newsletter-button a.button .icon.letter {
   height: 15px;
   right: 10px;
   top: 9px;
-  background: url("/images/email-icon.png") no-repeat 0 0;
+  background: url("../images/email-icon.png") no-repeat 0 0;
   background-size: cover;
 }
 /* line 226, ../sass/_custom.scss */
@@ -7522,7 +7522,7 @@ footer .copyright {
   display: inline-block;
   position: absolute;
   overflow: hidden;
-  background: url("/images/radar.png") no-repeat 0 0;
+  background: url("../images/radar.png") no-repeat 0 0;
   background-size: cover;
   width: 15px;
   height: 15px;
@@ -7557,7 +7557,7 @@ footer .copyright {
 }
 /* line 272, ../sass/_custom.scss */
 .site-search .quicksearch {
-  background: url("/images/select_button.png") no-repeat center right;
+  background: url("../images/select_button.png") no-repeat center right;
   background-size: contain;
 }
 
@@ -7619,7 +7619,7 @@ ul.vertical-buttons li {
 ul.vertical-buttons li a {
   display: inline-block;
   width: 100%;
-  background: url("/images/chevron-right.png") no-repeat 97% center;
+  background: url("../images/chevron-right.png") no-repeat 97% center;
   padding: 17px 44px 17px 19px;
 }
 /* line 317, ../sass/_custom.scss */
