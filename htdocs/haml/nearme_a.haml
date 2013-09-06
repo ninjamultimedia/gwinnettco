@@ -52,9 +52,28 @@
             %option(value="location1") Location One
             %option(value="location2") Location Two
     .page-title
-      %h1 Search Results
-
-
+      %h1 Near Me
+    %section.highlighted-wrapper.medium-blue
+      %form.nearme-param
+        .row
+          .small-3.columns
+            %label(for="distance") Distance:
+          .small-9.columns
+            %select.distance(name="distance")
+              %option(value="1") 1 mile
+              %option(value="5") 5 miles
+              %option(value="10") 10 miles
+        .row
+          .small-3.columns
+            %label(for="activity") Activity:
+          .small-9.columns
+            %select.activity(name="activity")
+              %option(value="parks_recreation") Parks and Recreation
+              %option(value="administration") Administration
+              %option(value="community_service") Community Service
+    %section
+      .map-wrapper
+        #map-canvas
 
     %section
       .title-bar
@@ -91,22 +110,27 @@
 
     / Application Javascript
     %script{ :src => "javascripts/foundation/foundation.js" }
-    //%script{ :src => "javascripts/foundation/foundation.alerts.js" }
-    //%script{ :src => "javascripts/foundation/foundation.clearing.js" }
-    //%script{ :src => "javascripts/foundation/foundation.cookie.js" }
-    //%script{ :src => "javascripts/foundation/foundation.dropdown.js" }
-    //%script{ :src => "javascripts/foundation/foundation.forms.js" }
-    //%script{ :src => "javascripts/foundation/foundation.interchange.js" }
-    //%script{ :src => "javascripts/foundation/foundation.orbit.js" }
-    //%script{ :src => "javascripts/foundation/foundation.placeholder.js" }
-    //%script{ :src => "javascripts/foundation/foundation.reveal.js" }
-    //%script{ :src => "javascripts/foundation/foundation.section.js" }
-    //%script{ :src => "javascripts/foundation/foundation.tooltips.js" }
-    //%script{ :src => "javascripts/foundation/foundation.topbar.js" }
+    / %script{ :src => "javascripts/foundation/foundation.alerts.js" }
+    / %script{ :src => "javascripts/foundation/foundation.clearing.js" }
+    / %script{ :src => "javascripts/foundation/foundation.cookie.js" }
+    / %script{ :src => "javascripts/foundation/foundation.dropdown.js" }
+    / %script{ :src => "javascripts/foundation/foundation.forms.js" }
+    / %script{ :src => "javascripts/foundation/foundation.interchange.js" }
+    / %script{ :src => "javascripts/foundation/foundation.orbit.js" }
+    / %script{ :src => "javascripts/foundation/foundation.placeholder.js" }
+    / %script{ :src => "javascripts/foundation/foundation.reveal.js" }
+    / %script{ :src => "javascripts/foundation/foundation.section.js" }
+    / %script{ :src => "javascripts/foundation/foundation.tooltips.js" }
+    / %script{ :src => "javascripts/foundation/foundation.topbar.js" }
     %script{ :src => "javascripts/vendor/swipe.js" }
 
     / Custom Javascript
     %script{ :src => "javascripts/script.js" }
+
+    / Google Maps Javascript API v3
+    %script{ :src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyA32rCw0iGKrJ0PKXVEtuqYHa3TC8yFNlo&sensor=true" }
+    %script{ :src => "javascripts/googlemaps.js" }
+
 
     :javascript
       $(window).load(function() {
