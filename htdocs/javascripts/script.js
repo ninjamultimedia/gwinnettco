@@ -1,4 +1,6 @@
 $(window).ready( function() {
+
+
   if ( $('#slider') ) {
     /**
     * Creates the indicator blocks;
@@ -40,5 +42,21 @@ $(window).ready( function() {
     auto: 3000,
     callback: indexChanged
   });
+
+  /** for the near me results dropdown toggling **/
+  if ( $('.nearme-results').length > 0 ) {
+    $results = $('.nearme-results');
+    $results.find('li.parent > a').on( 'click', function(e) {
+      e.preventDefault();
+      $this = $(this);
+      isActive = $this.closest('.parent').hasClass('expanded');
+      if ( isActive ) return false;
+      console.log( $results.find('.main ul li.parent').children('ul') );
+      $results.find('.main ul li.parent').children('ul').slideUp();
+      $results.find('.main ul li.parent').removeClass('expanded');
+      $this.closest('li.parent').children('ul').slideDown();
+      $this.closest('li.parent').addClass('expanded');
+    });
+  }
 
 });
