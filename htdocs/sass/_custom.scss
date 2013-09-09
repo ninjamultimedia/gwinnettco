@@ -382,17 +382,18 @@ ul.nearme-results {
       .icon {
         display: inline-block;
         padding: 10px;
-        width: 20%;
-        vertical-align: top;
+        width: 60px;
+        vertical-align: middle;
       }
       h3 {
+        border-left: 1px solid #BFCAD1;
         display: inline-block;
-        padding: 10px;
-        max-width: 65%;
-        border-left: 1px solid #bfcad1;
-        line-height: 38px;
-        white-space: nowrap;
         font-size: emCalc(18px);
+        line-height: 40px;
+        margin-top: 0;
+        max-width: 65%;
+        padding: 10px;
+        position: relative;
       }
     }
   }
@@ -420,12 +421,53 @@ ul.nearme-results {
     > a {
       background: -ms-linear-gradient(rgb(2,34,87),rgb(63,97,155));
       filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#223E71', endColorstr='#12223D');/*For IE7-8-9*/
-      @include background-image(image-url('../images/nearme_icon-chevron_main.png'),$header-gradient);
+      @include background-image(image-url('../images/nearme_icon-chevron_main_active.png'),$header-gradient);
       h3 { color: white; }
     }
     &.expanded {
       > a {
         @include background-image(image-url('../images/nearme_icon-chevron_main_active.png'),$header-gradient);
+      }
+    }
+  }
+  a.location {
+    background: rgb(229,229,229);
+    background-image: none !important;
+    .details {
+      display: inline-block;
+      padding: 5px;
+      p {
+        padding: 10px;
+        margin-bottom: 0;
+        color: rgb(38,33,158);
+        font-style: normal;
+        border-left: 5px solid $greenblue;
+        .title {
+          display: block;
+          font-size: emCalc(20px);
+          text-decoration: underline;
+        }
+        .distance {
+          display: block;
+          color: $medium-grey;
+        }
+      }
+    }
+    .map-it {
+      min-height: 70px;
+      display: block;
+      float: right;
+      padding: 10px;
+      padding-top: 25px;
+      background: rgb(237,237,237);
+      .link{
+        color: $dark-blue;
+        text-decoration: underline;
+        float: left;
+      }
+      .marker {
+        margin-left: 5px;
+        float: right;
       }
     }
   }

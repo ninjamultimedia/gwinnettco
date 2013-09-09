@@ -7713,20 +7713,21 @@ ul.nearme-results li a {
 ul.nearme-results li a .icon {
   display: inline-block;
   padding: 10px;
-  width: 20%;
-  vertical-align: top;
+  width: 60px;
+  vertical-align: middle;
 }
 /* line 388, ../sass/_custom.scss */
 ul.nearme-results li a h3 {
+  border-left: 1px solid #BFCAD1;
   display: inline-block;
-  padding: 10px;
-  max-width: 65%;
-  border-left: 1px solid #bfcad1;
-  line-height: 38px;
-  white-space: nowrap;
   font-size: 1.125em;
+  line-height: 40px;
+  margin-top: 0;
+  max-width: 65%;
+  padding: 10px;
+  position: relative;
 }
-/* line 400, ../sass/_custom.scss */
+/* line 401, ../sass/_custom.scss */
 ul.nearme-results li.parent a {
   background: -ms-linear-gradient(white, #e8e8e8);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFF', endColorstr='#E8E8E8');
@@ -7739,11 +7740,11 @@ ul.nearme-results li.parent a {
   background-position: 97% center;
   background-repeat: no-repeat;
 }
-/* line 407, ../sass/_custom.scss */
+/* line 408, ../sass/_custom.scss */
 ul.nearme-results li.parent ul {
   display: none;
 }
-/* line 411, ../sass/_custom.scss */
+/* line 412, ../sass/_custom.scss */
 ul.nearme-results li.parent.expanded > a {
   background: -ms-linear-gradient(#dddddd, #cacaca);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#DDDDDD', endColorstr='#CACACA');
@@ -7754,26 +7755,26 @@ ul.nearme-results li.parent.expanded > a {
   background-image: url('/images/../images/nearme_icon-chevron_active.png?1378498625'), -o-linear-gradient(#dddddd, #cacaca);
   background-image: url('/images/../images/nearme_icon-chevron_active.png?1378498625'), linear-gradient(#dddddd, #cacaca);
 }
-/* line 416, ../sass/_custom.scss */
+/* line 417, ../sass/_custom.scss */
 ul.nearme-results li.parent.expanded > ul {
   display: block;
 }
-/* line 420, ../sass/_custom.scss */
+/* line 421, ../sass/_custom.scss */
 ul.nearme-results li.parent.main > a {
   background: -ms-linear-gradient(#022257, #3f619b);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#223E71', endColorstr='#12223D');
   /*For IE7-8-9*/
-  background-image: url('/images/../images/nearme_icon-chevron_main.png'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #223e71), color-stop(100%, #12223d));
-  background-image: url('/images/../images/nearme_icon-chevron_main.png'), -webkit-linear-gradient(#223e71, #12223d);
-  background-image: url('/images/../images/nearme_icon-chevron_main.png'), -moz-linear-gradient(#223e71, #12223d);
-  background-image: url('/images/../images/nearme_icon-chevron_main.png'), -o-linear-gradient(#223e71, #12223d);
-  background-image: url('/images/../images/nearme_icon-chevron_main.png'), linear-gradient(#223e71, #12223d);
+  background-image: url('/images/../images/nearme_icon-chevron_main_active.png?1378498551'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #223e71), color-stop(100%, #12223d));
+  background-image: url('/images/../images/nearme_icon-chevron_main_active.png?1378498551'), -webkit-linear-gradient(#223e71, #12223d);
+  background-image: url('/images/../images/nearme_icon-chevron_main_active.png?1378498551'), -moz-linear-gradient(#223e71, #12223d);
+  background-image: url('/images/../images/nearme_icon-chevron_main_active.png?1378498551'), -o-linear-gradient(#223e71, #12223d);
+  background-image: url('/images/../images/nearme_icon-chevron_main_active.png?1378498551'), linear-gradient(#223e71, #12223d);
 }
-/* line 424, ../sass/_custom.scss */
+/* line 425, ../sass/_custom.scss */
 ul.nearme-results li.parent.main > a h3 {
   color: white;
 }
-/* line 427, ../sass/_custom.scss */
+/* line 428, ../sass/_custom.scss */
 ul.nearme-results li.parent.main.expanded > a {
   background-image: url('/images/../images/nearme_icon-chevron_main_active.png?1378498551'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #223e71), color-stop(100%, #12223d));
   background-image: url('/images/../images/nearme_icon-chevron_main_active.png?1378498551'), -webkit-linear-gradient(#223e71, #12223d);
@@ -7781,9 +7782,58 @@ ul.nearme-results li.parent.main.expanded > a {
   background-image: url('/images/../images/nearme_icon-chevron_main_active.png?1378498551'), -o-linear-gradient(#223e71, #12223d);
   background-image: url('/images/../images/nearme_icon-chevron_main_active.png?1378498551'), linear-gradient(#223e71, #12223d);
 }
+/* line 433, ../sass/_custom.scss */
+ul.nearme-results a.location {
+  background: #e5e5e5;
+  background-image: none !important;
+}
+/* line 436, ../sass/_custom.scss */
+ul.nearme-results a.location .details {
+  display: inline-block;
+  padding: 5px;
+}
+/* line 439, ../sass/_custom.scss */
+ul.nearme-results a.location .details p {
+  padding: 10px;
+  margin-bottom: 0;
+  color: #26219e;
+  font-style: normal;
+  border-left: 5px solid #57839c;
+}
+/* line 445, ../sass/_custom.scss */
+ul.nearme-results a.location .details p .title {
+  display: block;
+  font-size: 1.25em;
+  text-decoration: underline;
+}
+/* line 450, ../sass/_custom.scss */
+ul.nearme-results a.location .details p .distance {
+  display: block;
+  color: #687078;
+}
+/* line 456, ../sass/_custom.scss */
+ul.nearme-results a.location .map-it {
+  min-height: 70px;
+  display: block;
+  float: right;
+  padding: 10px;
+  padding-top: 25px;
+  background: #ededed;
+}
+/* line 463, ../sass/_custom.scss */
+ul.nearme-results a.location .map-it .link {
+  color: #233b69;
+  text-decoration: underline;
+  float: left;
+}
+/* line 468, ../sass/_custom.scss */
+ul.nearme-results a.location .map-it .marker {
+  margin-left: 5px;
+  float: right;
+}
 
 /** Contact Details **/
-/* line 435, ../sass/_custom.scss */
+/* line 477, ../sass/_custom.scss */
 .contact-details {
   color: #233b69;
   padding: 20px 15px;
@@ -7791,43 +7841,43 @@ ul.nearme-results li.parent.main.expanded > a {
 }
 
 /** slider **/
-/* line 442, ../sass/_custom.scss */
+/* line 484, ../sass/_custom.scss */
 .swipe {
   overflow: hidden;
   visibility: hidden;
   position: relative;
 }
 
-/* line 447, ../sass/_custom.scss */
+/* line 489, ../sass/_custom.scss */
 .swipe-wrap {
   overflow: hidden;
   position: relative;
 }
 
-/* line 451, ../sass/_custom.scss */
+/* line 493, ../sass/_custom.scss */
 .swipe-wrap > div {
   float: left;
   width: 100%;
   position: relative;
 }
 
-/* line 459, ../sass/_custom.scss */
+/* line 501, ../sass/_custom.scss */
 .slide {
   width: 125px;
   padding: 3px;
 }
-/* line 462, ../sass/_custom.scss */
+/* line 504, ../sass/_custom.scss */
 .slide img {
   width: 100%;
   display: inline-block;
 }
-/* line 466, ../sass/_custom.scss */
+/* line 508, ../sass/_custom.scss */
 .slide a {
   display: inline-block;
   position: relative;
   overflow: hidden;
 }
-/* line 471, ../sass/_custom.scss */
+/* line 513, ../sass/_custom.scss */
 .slide .copy {
   position: absolute;
   bottom: 0;
@@ -7835,20 +7885,20 @@ ul.nearme-results li.parent.main.expanded > a {
   padding: 5px;
   background: rgba(0, 0, 0, 0.7);
 }
-/* line 477, ../sass/_custom.scss */
+/* line 519, ../sass/_custom.scss */
 .slide .copy p {
   color: white;
   margin-bottom: 0;
 }
 
-/* line 483, ../sass/_custom.scss */
+/* line 525, ../sass/_custom.scss */
 .slider-index-indicator {
   display: block;
   overflow: hidden;
   margin-bottom: 0;
   text-align: center;
 }
-/* line 488, ../sass/_custom.scss */
+/* line 530, ../sass/_custom.scss */
 .slider-index-indicator li {
   display: inline-block;
   width: 44px;
@@ -7856,34 +7906,34 @@ ul.nearme-results li.parent.main.expanded > a {
   margin: 0;
   visibility: hidden;
 }
-/* line 494, ../sass/_custom.scss */
+/* line 536, ../sass/_custom.scss */
 .slider-index-indicator li a {
   display: inline-block;
   width: 100%;
   height: 10px;
   background: #4d7189;
 }
-/* line 500, ../sass/_custom.scss */
+/* line 542, ../sass/_custom.scss */
 .slider-index-indicator li.active a {
   background: #233b69;
 }
 
 /** article styling **/
-/* line 505, ../sass/_custom.scss */
+/* line 547, ../sass/_custom.scss */
 article {
   padding: 10px;
 }
-/* line 507, ../sass/_custom.scss */
+/* line 549, ../sass/_custom.scss */
 article a.crumbs {
   color: #233b69;
   text-decoration: underline;
 }
-/* line 511, ../sass/_custom.scss */
+/* line 553, ../sass/_custom.scss */
 article h2 {
   font-size: 1.125em;
   color: #233b69;
 }
-/* line 515, ../sass/_custom.scss */
+/* line 557, ../sass/_custom.scss */
 article h4 {
   font-style: italic;
   font-weight: normal;
@@ -7892,16 +7942,16 @@ article h4 {
 }
 
 /** search results styling **/
-/* line 527, ../sass/_custom.scss */
+/* line 569, ../sass/_custom.scss */
 .result-details h3 {
   font-weight: normal;
   color: #233b69;
 }
-/* line 528, ../sass/_custom.scss */
+/* line 570, ../sass/_custom.scss */
 .result-details p {
   font-style: normal !important;
 }
-/* line 529, ../sass/_custom.scss */
+/* line 571, ../sass/_custom.scss */
 .result-details .result-key {
   font-weight: bold;
 }
