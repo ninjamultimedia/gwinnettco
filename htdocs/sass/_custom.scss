@@ -27,6 +27,7 @@ $button-gradient-blue: linear-gradient(color-stops(rgb(97,138,185),rgb(52,74,124
 $button-gradient-green: linear-gradient(color-stops(rgb(127,174,14),rgb(80,126,8)));
 $button-gradient-greyblue: linear-gradient(color-stops(rgb(129,170,191),rgb(75,103,122)));
 $button-gradient-greygreen: linear-gradient(color-stops(rgb(107,107,92),rgb(78,77,65)));
+$grey-gradient: linear-gradient(color-stops(rgb(163,163,163),rgb(194,194,194)));
 
 /* Foundation Global Overrides */
 
@@ -168,6 +169,7 @@ header {
       font-weight: normal;
       padding: 8px 10px;
       margin: 5px;
+      margin-top: 9px;
     }
     .button-wrapper:last-child .button { margin-left: 15px; }
   }
@@ -536,10 +538,16 @@ ul.nearme-results {
     a {
       display: inline-block;
       width: 100%;
-      height: 10px;
-      background: $medium-blue;
+      height: 22px;
+      background: -ms-linear-gradient(rgb(163,163,163),rgb(194,194,194));
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#a3a3a3', endColorstr='#c2c2c2');/*For IE7-8-9*/
+      @include background-image( $grey-gradient );
     }
-    &.active a { background: $dark-blue; }
+    &.active a {
+      background: -ms-linear-gradient(#7FAE0E,#507E08);
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#7FAE0E', endColorstr='#507E08');/*For IE7-8-9*/
+      @include background-image($button-gradient-green);
+    }
   }
 }
 
