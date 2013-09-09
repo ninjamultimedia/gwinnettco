@@ -52,10 +52,54 @@
             %option(value="location1") Location One
             %option(value="location2") Location Two
     .page-title
-      %h1 Search Results
+      %h1 Near Me
+    %section
+      %article
+        %span.arrows <<&nbsp;
+        %a.crumbs(href="#") Back to results
+        .nearme-snapshot
+          .map-wrapper
+            #map-canvas
+          %h3 Camping Area 1
+          %a.address 800 Old Snellville Highway<br />Lawrenceville, GA 30044
+          .info
+            .label Info & Rentals:
+            .detail
+              %a(href="tel:770.822.5414") 770.822.5414
+          .info
+            .label Trails Hotline:
+            .detail
+              %a(href="tel:770.978.5270") 770.978.5270
+          .info
+            .label Park Hours:
+            .detail Sunrise until sunset unless posted otherwise
+          .info
+            .label Amenities:
+            .detail 91 acres - 18-hole disc golf course 1.4 mile paved, multi-purpose trail 1-mile soft surface trail – Horseshoe pit &bull; Playground &bull; Pavilions &bull; Lake &bull; Lakeview piers &bull; Outdoor classroom &bull; Restrooms &bull; Grill
+          .info
+            .label Website:
+            .detail
+              %a(href="http://www.campingarea1.com") http://www.campingarea1.com
+          .info
+            .label Description:
+            .detail Location description goes here.
 
-
-
+    %section
+      .title-bar
+        %h2 Image Gallery
+        %a.view-all(href="#") view all images
+      .slider-wrapper
+        #slider.swipe
+          .swipe-wrap
+            .slide
+              %a(href="#")
+                %img(src="images/slide_sample_1.png")
+            .slide
+              %a(href="#")
+                %img(src="images/slide_sample_2.png")
+            .slide
+              %a(href="#")
+                %img(src="images/slide_sample_3.png")
     %section
       .title-bar
         %h2 Contact Us
@@ -91,22 +135,27 @@
 
     / Application Javascript
     %script{ :src => "javascripts/foundation/foundation.js" }
-    //%script{ :src => "javascripts/foundation/foundation.alerts.js" }
-    //%script{ :src => "javascripts/foundation/foundation.clearing.js" }
-    //%script{ :src => "javascripts/foundation/foundation.cookie.js" }
-    //%script{ :src => "javascripts/foundation/foundation.dropdown.js" }
-    //%script{ :src => "javascripts/foundation/foundation.forms.js" }
-    //%script{ :src => "javascripts/foundation/foundation.interchange.js" }
-    //%script{ :src => "javascripts/foundation/foundation.orbit.js" }
-    //%script{ :src => "javascripts/foundation/foundation.placeholder.js" }
-    //%script{ :src => "javascripts/foundation/foundation.reveal.js" }
-    //%script{ :src => "javascripts/foundation/foundation.section.js" }
-    //%script{ :src => "javascripts/foundation/foundation.tooltips.js" }
-    //%script{ :src => "javascripts/foundation/foundation.topbar.js" }
+    / %script{ :src => "javascripts/foundation/foundation.alerts.js" }
+    / %script{ :src => "javascripts/foundation/foundation.clearing.js" }
+    / %script{ :src => "javascripts/foundation/foundation.cookie.js" }
+    / %script{ :src => "javascripts/foundation/foundation.dropdown.js" }
+    / %script{ :src => "javascripts/foundation/foundation.forms.js" }
+    / %script{ :src => "javascripts/foundation/foundation.interchange.js" }
+    / %script{ :src => "javascripts/foundation/foundation.orbit.js" }
+    / %script{ :src => "javascripts/foundation/foundation.placeholder.js" }
+    / %script{ :src => "javascripts/foundation/foundation.reveal.js" }
+    / %script{ :src => "javascripts/foundation/foundation.section.js" }
+    / %script{ :src => "javascripts/foundation/foundation.tooltips.js" }
+    / %script{ :src => "javascripts/foundation/foundation.topbar.js" }
     %script{ :src => "javascripts/vendor/swipe.js" }
 
     / Custom Javascript
     %script{ :src => "javascripts/script.js" }
+
+    / Google Maps Javascript API v3
+    %script{ :src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyA32rCw0iGKrJ0PKXVEtuqYHa3TC8yFNlo&sensor=true" }
+    %script{ :src => "javascripts/googlemaps.js" }
+
 
     :javascript
       $(window).load(function() {

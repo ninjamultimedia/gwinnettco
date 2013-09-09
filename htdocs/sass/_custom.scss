@@ -561,6 +561,35 @@ article {
     color: $dark-blue;
   }
   p { }
+  a {
+    color: $bright-blue;
+    text-decoration: underline;
+  }
+}
+.nearme-snapshot {
+  margin-top: 10px;
+  .info {
+    margin: 10px 0;
+    .label {
+      background: none;
+      color: $dark-blue;
+      display: inline-block;
+      vertical-align: top;
+      max-width: 40%;
+      white-space: normal;
+      text-align: left;
+    }
+    .detail {
+      display: inline-block;
+      max-width: 60%;
+    }
+  }
+  .map-wrapper {
+    width: 100px;
+    height: 100px;
+    border: 1px solid $dark-blue;
+    float: right;
+  }
 }
 
 /** search results styling **/

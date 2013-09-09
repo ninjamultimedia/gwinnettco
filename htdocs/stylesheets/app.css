@@ -7940,18 +7940,54 @@ article h4 {
   font-size: 0.875em;
   color: #233b69;
 }
+/* line 564, ../sass/_custom.scss */
+article a {
+  color: #3660a8;
+  text-decoration: underline;
+}
+
+/* line 569, ../sass/_custom.scss */
+.nearme-snapshot {
+  margin-top: 10px;
+}
+/* line 571, ../sass/_custom.scss */
+.nearme-snapshot .info {
+  margin: 10px 0;
+}
+/* line 573, ../sass/_custom.scss */
+.nearme-snapshot .info .label {
+  background: none;
+  color: #233b69;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 40%;
+  white-space: normal;
+  text-align: left;
+}
+/* line 582, ../sass/_custom.scss */
+.nearme-snapshot .info .detail {
+  display: inline-block;
+  max-width: 60%;
+}
+/* line 587, ../sass/_custom.scss */
+.nearme-snapshot .map-wrapper {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #233b69;
+  float: right;
+}
 
 /** search results styling **/
-/* line 569, ../sass/_custom.scss */
+/* line 598, ../sass/_custom.scss */
 .result-details h3 {
   font-weight: normal;
   color: #233b69;
 }
-/* line 570, ../sass/_custom.scss */
+/* line 599, ../sass/_custom.scss */
 .result-details p {
   font-style: normal !important;
 }
-/* line 571, ../sass/_custom.scss */
+/* line 600, ../sass/_custom.scss */
 .result-details .result-key {
   font-weight: bold;
 }
