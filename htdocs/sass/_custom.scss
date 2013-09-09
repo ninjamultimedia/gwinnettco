@@ -24,6 +24,7 @@ $subtle-gradient:  linear-gradient(color-stops(rgb(255,255,255),rgb(232,232,232)
 $grey-gradient: linear-gradient(color-stops(rgb(221,221,221),rgb(202,202,202)));
 $darker-greygreen-gradient:  linear-gradient(color-stops(rgb(38,38,33),rgb(86,86,73)));
 $button-gradient-blue: linear-gradient(color-stops(rgb(97,138,185),rgb(52,74,124)));
+$button-gradient-blue-hover: linear-gradient(color-stops(rgb(51,95,155),rgb(27,50,103)));
 $button-gradient-green: linear-gradient(color-stops(rgb(127,174,14),rgb(80,126,8)));
 $button-gradient-greyblue: linear-gradient(color-stops(rgb(129,170,191),rgb(75,103,122)));
 $button-gradient-greygreen: linear-gradient(color-stops(rgb(107,107,92),rgb(78,77,65)));
@@ -115,23 +116,27 @@ $include-html-button-classes: false; //this frees up .button for our use
   @include box-shadow(none);
   @include text-shadow(lighten(black,30%) 1px 1px 4px);
   white-space: nowrap;
-  &.greygreen {
+  &:hover {
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#335f9b', endColorstr='#1b3267');/*For IE7-8-9*/
+    @include background-image($button-gradient-blue-hover);
+  }
+  &.greygreen, &.greygreen:hover {
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#6B6B5C', endColorstr='#4E4D41');/*For IE7-8-9*/
     @include background-image($button-gradient-greygreen);
     border: 1px solid $dark-blue;
   }
-  &.greyblue {
+  &.greyblue, &.greyblue:hover {
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#81AABF', endColorstr='#4B677A');/*For IE7-8-9*/
     @include background-image($button-gradient-greyblue);
     border: 1px solid rgb(49,65,78);
     @include text-shadow($dark-blue 1px 1px 2px);
   }
-  &.green {
+  &.green, &.green:hover {
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#7FAE0E', endColorstr='#507E08');/*For IE7-8-9*/
     @include background-image($button-gradient-green);
     border: 1px solid rgb(65,102,7);
   }
-  &.segmented {
+  &.segmented, &.segmented:hover {
     height: 39px;
     padding-right: 40px;
     overflow: hidden;
