@@ -1,5 +1,7 @@
 $(window).ready( function() {
-
+  /** windows phone 7 detection **/
+  var uAgent = navigator.userAgent;
+  if ( uAgent.indexOf('IEMobile') > 0 ) $('html').addClass('iemobile');
 
   if ( $('#slider') ) {
     /**

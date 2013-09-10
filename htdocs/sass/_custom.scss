@@ -22,7 +22,6 @@ $off-white: rgb(239,255,255);
 $nav-gradient: linear-gradient(color-stops(rgb(2,34,87),rgb(63,97,155)));
 $header-gradient: linear-gradient(color-stops(rgb(34,62,113),rgb(18,34,61)));
 $subtle-gradient:  linear-gradient(color-stops(rgb(255,255,255),rgb(232,232,232)));
-$subtle-gradient-hover:  linear-gradient(color-stops(rgb(224,224,224),rgb(204,204,204)));
 $grey-gradient: linear-gradient(color-stops(rgb(221,221,221),rgb(202,202,202)));
 $darker-greygreen-gradient:  linear-gradient(color-stops(rgb(38,38,33),rgb(86,86,73)));
 $button-gradient-blue: linear-gradient(color-stops(rgb(97,138,185),rgb(52,74,124)));
@@ -358,10 +357,6 @@ ul.vertical-buttons {
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFF', endColorstr='#E8E8E8');/*For IE7-8-9*/
     @include background-image($subtle-gradient);
     border-bottom: 1px solid rgb(22,41,75);
-    &:hover {
-      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#e0e0e0', endColorstr='#cccccc');/*For IE7-8-9*/
-      @include background-image($subtle-gradient-hover);
-    }
     a {
       display: inline-block;
       width: 100%;
@@ -514,6 +509,7 @@ ul.nearme-results {
 .slide {
   width: 125px;
   padding: 3px;
+  text-align: center;
   img {
     width: 100%;
     display: inline-block;
@@ -617,4 +613,8 @@ article {
   h3 { font-weight: normal; color: $dark-blue; }
   p { font-style: normal !important; }
   .result-key { font-weight: bold; }
+}
+
+.iemobile, ie6, .ie7 {
+  .button { border-radius: 0 !important; }
 }
