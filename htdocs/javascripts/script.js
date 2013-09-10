@@ -1,7 +1,10 @@
 $(window).ready( function() {
   /** windows phone 7 detection **/
+  //'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) Asus;Galaxy6' || 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) Asus;Galaxy6'
+
   var uAgent = navigator.userAgent;
-  if ( uAgent.indexOf('IEMobile') > 0 ) $('html').addClass('iemobile');
+  if ( uAgent.indexOf('IEMobile') > 0 )
+  $('html').addClass('iemobile');
 
   if ( $('#slider') ) {
     /**
