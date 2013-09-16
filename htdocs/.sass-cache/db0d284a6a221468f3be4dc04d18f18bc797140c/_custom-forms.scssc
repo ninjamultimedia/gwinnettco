@@ -366,9 +366,9 @@ iQo;;["&.checkbox;o;;[o;;[o;
 iSo;#;["checkbox;"@Ÿ;
 iS;"@Ÿ;
 iS;"@Ÿ;
-iS;$T;	@	;%i ;[o:Sass::Tree::MixinNode;"custom-form-input:@keywords{"radiuso;	;" custom-form-checkbox-radius;	@	;
-iT;" custom_form_checkbox_radius"mark_sizeo;	;"custom-form-check-size;	@	;
-iT;"custom_form_check_size;	@	;[ :@splat0;
+iS;$T;	@	;%i ;[o:Sass::Tree::MixinNode;"custom-form-input:@keywords{"mark_sizeo;	;"custom-form-check-size;	@	;
+iT;"custom_form_check_size"radiuso;	;" custom-form-checkbox-radius;	@	;
+iT;" custom_form_checkbox_radius;	@	;[ :@splat0;
 iT:
 @args[ ;
 iSo;;["&.radio;o;;[o;;[o;
@@ -377,9 +377,9 @@ iWo;#;["
 radio;"@½;
 iW;"@½;
 iW;"@½;
-iW;$T;	@	;%i ;[o;/;"custom-form-input;0{"radiuso:Sass::Script::Number:@denominator_units[ :@numerator_units["px;iè;	@	:@original"1000px;
-iX"mark_sizeo;	;"custom-form-radio-size;	@	;
-iX;"custom_form_radio_size;	@	;[ ;10;
+iW;$T;	@	;%i ;[o;/;"custom-form-input;0{"mark_sizeo;	;"custom-form-radio-size;	@	;
+iX;"custom_form_radio_size"radiuso:Sass::Script::Number:@denominator_units[ :@numerator_units["px;iè;	@	:@original"1000px;
+iX;	@	;[ ;10;
 iX;2[ ;
 iWo;;["&.checkbox;o;;[o;;[o;
 ;0;o;;{ ;[o;.;"" ;
