@@ -568,6 +568,7 @@ article {
   h2 {
     font-size: emCalc(18px);
     color: $dark-blue;
+    margin-top: 15px;
   }
   h4 {
     font-style: italic;
@@ -575,7 +576,7 @@ article {
     font-size: emCalc(14px);
     color: $dark-blue;
   }
-  p { }
+  p { font-size: emCalc(18px); }
   a {
     color: $bright-blue;
     text-decoration: underline;
