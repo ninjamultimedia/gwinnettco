@@ -7423,7 +7423,7 @@ header .session-nav .header-logo a {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('/images/../images/header-logo.png?1377544066');
+  background-image: url('../images/header-logo.png?1377544066');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -7753,11 +7753,11 @@ ul.nearme-results li.parent a {
   background: -ms-linear-gradient(white, #e8e8e8);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFFFFF', endColorstr='#E8E8E8');
   /*For IE7-8-9*/
-  background-image: url('/images/../images/nearme_icon-chevron.png?1378480979'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e8e8e8));
-  background-image: url('/images/../images/nearme_icon-chevron.png?1378480979'), -webkit-linear-gradient(#ffffff, #e8e8e8);
-  background-image: url('/images/../images/nearme_icon-chevron.png?1378480979'), -moz-linear-gradient(#ffffff, #e8e8e8);
-  background-image: url('/images/../images/nearme_icon-chevron.png?1378480979'), -o-linear-gradient(#ffffff, #e8e8e8);
-  background-image: url('/images/../images/nearme_icon-chevron.png?1378480979'), linear-gradient(#ffffff, #e8e8e8);
+  background-image: url('../images/nearme_icon-chevron.png?1378480979'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e8e8e8));
+  background-image: url('../images/nearme_icon-chevron.png?1378480979'), -webkit-linear-gradient(#ffffff, #e8e8e8);
+  background-image: url('../images/nearme_icon-chevron.png?1378480979'), -moz-linear-gradient(#ffffff, #e8e8e8);
+  background-image: url('../images/nearme_icon-chevron.png?1378480979'), -o-linear-gradient(#ffffff, #e8e8e8);
+  background-image: url('../images/nearme_icon-chevron.png?1378480979'), linear-gradient(#ffffff, #e8e8e8);
   background-position: 97% center;
   background-repeat: no-repeat;
 }
@@ -7770,11 +7770,11 @@ ul.nearme-results li.parent.expanded > a {
   background: -ms-linear-gradient(#dddddd, #cacaca);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#DDDDDD', endColorstr='#CACACA');
   /*For IE7-8-9*/
-  background-image: url('/images/../images/nearme_icon-chevron_active.png?1378498625'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a3a3a3), color-stop(100%, #c2c2c2));
-  background-image: url('/images/../images/nearme_icon-chevron_active.png?1378498625'), -webkit-linear-gradient(#a3a3a3, #c2c2c2);
-  background-image: url('/images/../images/nearme_icon-chevron_active.png?1378498625'), -moz-linear-gradient(#a3a3a3, #c2c2c2);
-  background-image: url('/images/../images/nearme_icon-chevron_active.png?1378498625'), -o-linear-gradient(#a3a3a3, #c2c2c2);
-  background-image: url('/images/../images/nearme_icon-chevron_active.png?1378498625'), linear-gradient(#a3a3a3, #c2c2c2);
+  background-image: url('../images/nearme_icon-chevron_active.png?1378498625'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a3a3a3), color-stop(100%, #c2c2c2));
+  background-image: url('../images/nearme_icon-chevron_active.png?1378498625'), -webkit-linear-gradient(#a3a3a3, #c2c2c2);
+  background-image: url('../images/nearme_icon-chevron_active.png?1378498625'), -moz-linear-gradient(#a3a3a3, #c2c2c2);
+  background-image: url('../images/nearme_icon-chevron_active.png?1378498625'), -o-linear-gradient(#a3a3a3, #c2c2c2);
+  background-image: url('../images/nearme_icon-chevron_active.png?1378498625'), linear-gradient(#a3a3a3, #c2c2c2);
 }
 /* line 430, ../sass/_custom.scss */
 ul.nearme-results li.parent.expanded > ul {
@@ -7785,11 +7785,11 @@ ul.nearme-results li.parent.main > a {
   background: -ms-linear-gradient(#022257, #3f619b);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#223E71', endColorstr='#12223D');
   /*For IE7-8-9*/
-  background-image: url('/images/../images/nearme_icon-chevron_main_active.png?1378498551'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #223e71), color-stop(100%, #12223d));
-  background-image: url('/images/../images/nearme_icon-chevron_main_active.png?1378498551'), -webkit-linear-gradient(#223e71, #12223d);
-  background-image: url('/images/../images/nearme_icon-chevron_main_active.png?1378498551'), -moz-linear-gradient(#223e71, #12223d);
-  background-image: url('/images/../images/nearme_icon-chevron_main_active.png?1378498551'), -o-linear-gradient(#223e71, #12223d);
-  background-image: url('/images/../images/nearme_icon-chevron_main_active.png?1378498551'), linear-gradient(#223e71, #12223d);
+  background-image: url('../images/nearme_icon-chevron_main_active.png?1378498551'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #223e71), color-stop(100%, #12223d));
+  background-image: url('../images/nearme_icon-chevron_main_active.png?1378498551'), -webkit-linear-gradient(#223e71, #12223d);
+  background-image: url('../images/nearme_icon-chevron_main_active.png?1378498551'), -moz-linear-gradient(#223e71, #12223d);
+  background-image: url('../images/nearme_icon-chevron_main_active.png?1378498551'), -o-linear-gradient(#223e71, #12223d);
+  background-image: url('../images/nearme_icon-chevron_main_active.png?1378498551'), linear-gradient(#223e71, #12223d);
 }
 /* line 438, ../sass/_custom.scss */
 ul.nearme-results li.parent.main > a h3 {
@@ -7797,11 +7797,11 @@ ul.nearme-results li.parent.main > a h3 {
 }
 /* line 441, ../sass/_custom.scss */
 ul.nearme-results li.parent.main.expanded > a {
-  background-image: url('/images/../images/nearme_icon-chevron_main_active.png?1378498551'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #223e71), color-stop(100%, #12223d));
-  background-image: url('/images/../images/nearme_icon-chevron_main_active.png?1378498551'), -webkit-linear-gradient(#223e71, #12223d);
-  background-image: url('/images/../images/nearme_icon-chevron_main_active.png?1378498551'), -moz-linear-gradient(#223e71, #12223d);
-  background-image: url('/images/../images/nearme_icon-chevron_main_active.png?1378498551'), -o-linear-gradient(#223e71, #12223d);
-  background-image: url('/images/../images/nearme_icon-chevron_main_active.png?1378498551'), linear-gradient(#223e71, #12223d);
+  background-image: url('../images/nearme_icon-chevron_main_active.png?1378498551'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #223e71), color-stop(100%, #12223d));
+  background-image: url('../images/nearme_icon-chevron_main_active.png?1378498551'), -webkit-linear-gradient(#223e71, #12223d);
+  background-image: url('../images/nearme_icon-chevron_main_active.png?1378498551'), -moz-linear-gradient(#223e71, #12223d);
+  background-image: url('../images/nearme_icon-chevron_main_active.png?1378498551'), -o-linear-gradient(#223e71, #12223d);
+  background-image: url('../images/nearme_icon-chevron_main_active.png?1378498551'), linear-gradient(#223e71, #12223d);
 }
 /* line 446, ../sass/_custom.scss */
 ul.nearme-results a.location {
