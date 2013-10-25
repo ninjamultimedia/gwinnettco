@@ -219,8 +219,6 @@
                     .map-it
                       .link Map it
                       %img.marker(src="images/marker_3.png")
-
-
     %section
       .title-bar
         %h2 Contact Us
@@ -230,17 +228,18 @@
           .row
             %h3.small-12.columns Gwinnett Justice  & Administration Center
           .row
-            .small-7.columns
+            .small-7.columns.address
               %p 75 Langley Drive<br />Lawrenceville, GA 30046
-            .small-5.columns
+              .row
+                .button-wrapper.small-6.columns
+                  %a.button Map It
+                .button-wrapper.small-6.columns
+                  %a.button Directions
+            .small-5.columns.phone
               %p Primary Phone: <a href="tel:770.822.8000">770.822.8000</a>
-          .row.button-list
-            .button-wrapper.small-4.columns
-              %a.button Map It
-            .button-wrapper.small-4.columns
-              %a.button Directions
-            .button-wrapper.small-4.columns
-              %a.button Call
+              .row
+                .button-wrapper.small-7.columns.small-offset-5
+                  %a.button Call
     %footer
       .row.button-list
         .button-wrapper.small-12.columns.newsletter-button

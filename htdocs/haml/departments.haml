@@ -52,52 +52,88 @@
             %option(value="location1") Location One
             %option(value="location2") Location Two
     .page-title
-      %h1 Emergency Contacts
+      %h1 Departments
     %section
       .title-bar
-        %h2 Department Phone Listing
+        %h2 Community Service
         //%a.view-all(href="#") view all events
       .wrapper
         %ul.vertical-buttons
           %li
             %a
-              %h3 For Frequently Called County Numbers
+              %h3 Parks and Recreation
+          %li
+            %a
+              %h3 H.O.O.K.E.D. Court Ordered
     %section
       .title-bar
-        %h2 Directions
+        %h2 Financial Services
         //%a.view-all(href="#") view all events
       .wrapper
         %ul.vertical-buttons
           %li
             %a
-              %h3 Gwinnett Justice and Administration Center
-              %p
-                %span.link Directions
+              %h3 Tax Assessors Office
           %li
             %a
-              %h3 Gwinnett County Gov. Annex Building
-              %p
-                %span.link Directions to tag office
+              %h3 Property Taxes
+    %section
+      .title-bar
+        %h2 Human Resources
+        //%a.view-all(href="#") view all events
+      .wrapper
+        %ul.vertical-buttons
           %li
             %a
-              %h3 Election Office
-              %p
-                %span.link Directions and map
+              %h3 Job Opportunities
           %li
             %a
-              %h3 Lawrenceville Health Center
-              %p
-                %span.link Directions and map
+              %h3 Employment And Testing
+    %section
+      .title-bar
+        %h2 Technology Services
+        //%a.view-all(href="#") view all events
+      .wrapper
+        %ul.vertical-buttons
           %li
             %a
-              %h3 One Justice Square
-              %p
-                %span.link Directions and map
+              %h3 Geographic Information Systems & More
+    %section
+      .title-bar
+        %h2 Police Services
+        //%a.view-all(href="#") view all events
+      .wrapper
+        %ul.vertical-buttons
           %li
             %a
-              %h3 Recorder's Court / Juvenile Court
-              %p
-                %span.link Directions and Recorder's Court information
+              %h3 Animal Welfare
+          %li
+            %a
+              %h3 Enforcement News
+    %section
+      .title-bar
+        %h2 Water Resources
+        //%a.view-all(href="#") view all events
+      .wrapper
+        %ul.vertical-buttons
+          %li
+            %a
+              %h3 Pay Water Bill Online
+    %section
+      .title-bar
+        %h2 Transportation Services
+        //%a.view-all(href="#") view all events
+      .wrapper
+        %ul.vertical-buttons
+          %li
+            %a
+              %h3 Gwinnett County Transit
+          %li
+            %a
+              %h3 Routes and Schedules
+    .row
+      .small-12.columns.button-wrapper.text-center
+        %a.button.segmented See Full Page List <span class="arrow"></span>
     %section
       .title-bar
         %h2 Contact Us
@@ -107,17 +143,18 @@
           .row
             %h3.small-12.columns Gwinnett Justice  & Administration Center
           .row
-            .small-7.columns
+            .small-7.columns.address
               %p 75 Langley Drive<br />Lawrenceville, GA 30046
-            .small-5.columns
+              .row
+                .button-wrapper.small-6.columns
+                  %a.button Map It
+                .button-wrapper.small-6.columns
+                  %a.button Directions
+            .small-5.columns.phone
               %p Primary Phone: <a href="tel:770.822.8000">770.822.8000</a>
-          .row.button-list
-            .button-wrapper.small-4.columns
-              %a.button Map It
-            .button-wrapper.small-4.columns
-              %a.button Directions
-            .button-wrapper.small-4.columns
-              %a.button Call
+              .row
+                .button-wrapper.small-7.columns.small-offset-5
+                  %a.button Call
     %footer
       .row.button-list
         .button-wrapper.small-12.columns.newsletter-button
@@ -126,6 +163,9 @@
         %a(href="#") ::: <span style="text-decoration: underline;">View Full Site</span> :::
       .highlighted-wrapper.dark-greygreen.text-center.copyright
         %p Official Site of Gwinnett County Government<br />Copyright 2012, Gwinnett County Board of Commissioners
+
+
+
 
 
 

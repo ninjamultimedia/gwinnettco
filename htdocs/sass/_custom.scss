@@ -491,6 +491,8 @@ ul.nearme-results {
   color: $dark-blue;
   padding: 20px 15px;
   border-bottom: 1px solid rgb(170,183,204);
+  .phone { text-align: right; }
+  .row .columns .row { margin: 0; }
 }
 
 /** slider **/
