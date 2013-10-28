@@ -64,4 +64,27 @@ $(window).ready( function() {
     });
   }
 
+  /** handles the loading of additional content to a news article **/
+  if ( $('article .post-content') ) { //see if there's a post content inside of an article element
+    var fullArticleLinks = $('article .post-content').find('[data-full-article]'); //check for data-full-article links
+    if ( fullArticleLinks.length > 0 ) {
+      var $articleContainer = $('article .post-content');
+      $(fullArticleLinks).each( function(i,val){
+        var $readmoreButton = $(fullArticleLinks[i]);
+        var articleRef = $readmoreButton.data('full-article'); //some reference for the webservice to use
+        var webServiceBaseURL = '/mock_webservice'; //I set up a mock directory for fake JSON responses
+        $readmoreButton.on('click', function(e){
+          $.ajax( webServiceBaseURL+'/'+articleRef ).done( function(data){
+            //hide the button
+            $readmoreButton.fadeOut(750, function(){$readmoreButton.remove()});
+            //add a container for the additional content to be inserted into, so we can hide it.
+            $articleContainer.append('<div class="additional"></div>');
+            $articleContainer.children('.additional').hide();
+            $articleContainer.children('.additional').append(data.additional).fadeIn(750);
+          });
+        });
+      });
+    }
+  }
+
 });
