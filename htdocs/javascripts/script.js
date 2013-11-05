@@ -72,7 +72,7 @@ $(window).ready( function() {
       $(fullArticleLinks).each( function(i,val){
         var $readmoreButton = $(fullArticleLinks[i]);
         var articleRef = $readmoreButton.data('full-article'); //some reference for the webservice to use
-        var webServiceBaseURL = '/mock_webservice'; //I set up a mock directory for fake JSON responses
+        var webServiceBaseURL = 'mock_webservice'; //I set up a mock directory for fake JSON responses
         $readmoreButton.on('click', function(e){
           $.ajax( webServiceBaseURL+'/'+articleRef ).done( function(data){
             //hide the button
